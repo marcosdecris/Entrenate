@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marcos.appejercicios.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewMainAparatos"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/aparatos"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMainRutinas"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rutinas"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMainEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ejercicios"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMainDondeEntreno"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/dondeentreno"
+        android:scaleType="centerCrop"
+        />
+
+</LinearLayout>

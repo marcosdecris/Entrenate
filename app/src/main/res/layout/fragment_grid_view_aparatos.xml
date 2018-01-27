@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.marcos.appejercicios.View.Aparatos.FragmentGridViewAparatos">
+
+    <!--<GridView-->
+        <!--android:id="@+id/gridViewAparatos"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:numColumns="2">-->
+
+
+    <!--</GridView>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerGridAparatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

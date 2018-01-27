@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marcos.appejercicios.View.Ejercicios.ContenedorEjercicios">
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayoutEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        android:background="@color/colorAccent"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorColor="@color/colorPrimary"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerEjercicios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio">
+
+   <VideoView
+       android:id="@+id/videoViewEjercicio"
+       android:layout_width="300dp"
+       android:layout_height="200dp"
+       android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewNombreEj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textViewRepEj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeticiones"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textViewRutinaEj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutina donde encontrarlo"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+</LinearLayout>
