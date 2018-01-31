@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import com.example.marcos.appejercicios.DAO.DaoEjercicio;
 import com.example.marcos.appejercicios.View.Aparatos.ContenedorAparatos;
-import com.example.marcos.appejercicios.View.DondeEntreno.ContenedorLugares;
+import com.example.marcos.appejercicios.View.DondeEntreno.ContenedorDondeEntreno;
 import com.example.marcos.appejercicios.View.Ejercicios.ContenedorEjercicios;
 import com.example.marcos.appejercicios.View.Rutinas.ContenedorRutinas;
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         dondeEntreno.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                cambiarVista(ContenedorLugares.class);
+                cambiarVista(ContenedorDondeEntreno.class);
             }
         });
 
