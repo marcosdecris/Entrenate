@@ -44,13 +44,14 @@ public class ContenedorDondeEntreno extends AppCompatActivity implements Adaptad
 
     //Metodo que viene del onClic del adaptador
     @Override
-    public void irAMapa(String direccion) {
+    public void irAMapa(String nombre, String direccion) {
         if(isServicesOk()){
             // TODO -- Escribir el metodo que va al mapa
 //            FragmentDetalleLugar fragmentDetalleLugar = new FragmentDetalleLugar();
 //            cargarFragment(fragmentDetalleLugar);
             Intent intent = new Intent(ContenedorDondeEntreno.this, MapActivity.class);
             Bundle bundle = new Bundle();
+            bundle.putString(MapActivity.CLAVE_NOMBRE, nombre);
             bundle.putString(MapActivity.CLAVE_DIRECCION, direccion);
             intent.putExtras(bundle);
             startActivity(intent);

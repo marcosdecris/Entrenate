@@ -40,6 +40,7 @@ public class MapActivity extends AppCompatActivity {
     //Constantes
     private static final String TAG = "MapActivity";
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+    public static final String CLAVE_NOMBRE= "Nombre";
     public static final String CLAVE_DIRECCION = "Direccion";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 12334;
     private static final float DEFAULT_ZOOM = 15f;
@@ -50,6 +51,7 @@ public class MapActivity extends AppCompatActivity {
     private GoogleMap mMap;
     private FusedLocationProviderClient mfusedLocationProviderClient;
     private GeoDataClient mGeoDataClient;
+    private String nombrePlaza;
     private String ubicacionPlaza;
 
 
@@ -60,10 +62,11 @@ public class MapActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
+        nombrePlaza = bundle.getString(CLAVE_NOMBRE);
         ubicacionPlaza = bundle.getString(CLAVE_DIRECCION);
         getLocationPermisiion();
         TextView textView = findViewById(R.id.textViewMapNombre);
-        textView.setText(ubicacionPlaza);
+        textView.setText(nombrePlaza);
     }
 
     //Inicializo el mapa
@@ -143,7 +146,7 @@ public class MapActivity extends AppCompatActivity {
             Address address = listaAdress.get(0);
             Log.d(TAG, "geolocate: found a location" + address.toString());
 
-            moveCamara(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM, ubicacionPlaza);
+            moveCamara(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM, nombrePlaza);
         }
 
     }
