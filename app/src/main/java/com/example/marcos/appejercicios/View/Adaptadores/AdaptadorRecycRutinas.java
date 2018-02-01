@@ -25,11 +25,13 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
     //Atts
     private Context context;
     private List<Rutina> listaRutinas;
+    private ComunicadorRutinas comunicadorRutinas;
 
     //Constructor
     public AdaptadorRecycRutinas(Context context, List<Rutina> listaRutinas) {
         this.context = context;
         this.listaRutinas = listaRutinas;
+        this.comunicadorRutinas = (ComunicadorRutinas) context;
     }
 
     @Override
@@ -53,7 +55,7 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
             @Override
             public void onClick(View v) {
                 //TODO -- Metodo para ir a detalle
-               // comunicador2.irAEjercicio(ejercicio);
+                comunicadorRutinas.irADetalle(rutina.getListaEjercicios());
             }
         });
     }
@@ -99,5 +101,9 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
 //            Glide.with(context).load(unaNoticia.getUrlImagen()).apply(ro).into(imagen);
         }
 
+    }
+
+    public interface ComunicadorRutinas {
+        public void irADetalle(List<Integer> listaEjercicios);
     }
 }
