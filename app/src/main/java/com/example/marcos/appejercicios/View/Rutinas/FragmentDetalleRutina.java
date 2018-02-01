@@ -8,16 +8,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
+import android.widget.Button;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import com.example.marcos.appejercicios.DAO.DaoEjCalentamiento;
 import com.example.marcos.appejercicios.DAO.DaoEjEstiramiento;
 import com.example.marcos.appejercicios.DAO.DaoEjercicio;
-import com.example.marcos.appejercicios.DAO.DaoRutina;
 import com.example.marcos.appejercicios.Model.Ejercicio;
 import com.example.marcos.appejercicios.Model.PadreExpandable;
-import com.example.marcos.appejercicios.Model.Rutina;
 import com.example.marcos.appejercicios.R;
 import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorExpandableRecycler;
 
@@ -31,7 +29,7 @@ public class FragmentDetalleRutina extends Fragment {
     public static final String CLAVE_DETALLE_RUTINA = "clave_detalle_rutina";
     public static final String CLAVE_DETALLE_ESTIRAMIENTO = "clave_detalle_estiramiento";
     public static final String CLAVE_DETALLE_CALENTAMIENTO = "calentamiento";
-    private List<Integer> listaIdsEjercicios;
+    private List<Integer> listaIdsEjsRtna;
     private List<Integer> listaIdsEjsCalent;
     private List<Integer> listaIdsEjsEstir;
     private List<Ejercicio> listaDeEjerciciosRutina;
@@ -40,9 +38,11 @@ public class FragmentDetalleRutina extends Fragment {
     private List<Object> listaHijoRutina1;
     private List<Object> listaHijoRutina2;
     private List<Object> listaHijoRutina3;
-    PadreExpandable padreExpandable1;
-    PadreExpandable padreExpandable2;
-    PadreExpandable padreExpandable3;
+    private PadreExpandable padreExpandable1;
+    private PadreExpandable padreExpandable2;
+    private PadreExpandable padreExpandable3;
+    private Button btnEmpezar;
+    private EmpezarRtna empezarRtna;
 
 
     public FragmentDetalleRutina() {
@@ -55,12 +55,12 @@ public class FragmentDetalleRutina extends Fragment {
                              Bundle savedInstanceState) {
 
 
-        //Obtengo el Ejercicio
+        //Obtengo el Bundle
         Bundle bundle = getArguments();
         listaIdsEjsCalent = bundle.getIntegerArrayList(CLAVE_DETALLE_CALENTAMIENTO);
-        listaIdsEjercicios = bundle.getIntegerArrayList(CLAVE_DETALLE_RUTINA);
+        listaIdsEjsRtna = bundle.getIntegerArrayList(CLAVE_DETALLE_RUTINA);
         listaIdsEjsEstir = bundle.getIntegerArrayList(CLAVE_DETALLE_ESTIRAMIENTO);
-
+        empezarRtna = (EmpezarRtna) getContext();
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fragment_detalle_rutina, container, false);
@@ -73,6 +73,7 @@ public class FragmentDetalleRutina extends Fragment {
         padreExpandable2 = new PadreExpandable("Rutina");
         padreExpandable3 = new PadreExpandable("Elongacion");
 
+        //Cargamos cada padre con su lista de Ejercicios correspondiente
         cargarPadre1();
         cargarPadre2();
         cargarPadre3();
@@ -94,9 +95,17 @@ public class FragmentDetalleRutina extends Fragment {
         //Seteo el recycler con el adaptador
         recyclerView.setAdapter(adaptador);
 
+        btnEmpezar = view.findViewById(R.id.btnEmpezar);
+        btnEmpezar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                empezarRtna.comenzarRutina(listaIdsEjsCalent, listaIdsEjsRtna, listaIdsEjsEstir);
+            }
+        });
         return view;
     }
 
+    //Cargamos cada padre con su lista de Ejercicios correspondiente
     public void cargarPadre1() {
         //Traigo los Ejercicios
         DaoEjCalentamiento daoEjCalentamiento = new DaoEjCalentamiento();
@@ -113,7 +122,7 @@ public class FragmentDetalleRutina extends Fragment {
     public void cargarPadre2() {
         //Traigo los Ejercicios
         DaoEjercicio daoEjercicio = new DaoEjercicio();
-        listaDeEjerciciosRutina = daoEjercicio.buscarEjsPorId(listaIdsEjercicios);
+        listaDeEjerciciosRutina = daoEjercicio.buscarEjsPorId(listaIdsEjsRtna);
 
         //Le paso la lista de Ejercicios al Padre2
         listaHijoRutina2 = new ArrayList<>();
@@ -124,6 +133,7 @@ public class FragmentDetalleRutina extends Fragment {
     }
 
     public void cargarPadre3() {
+
         //Traigo los Ejercicios
         DaoEjEstiramiento daoEjEstiramiento = new DaoEjEstiramiento();
         listaDeEjerciciosEstir = daoEjEstiramiento.buscarEjsEstiId(listaIdsEjsEstir);
@@ -134,6 +144,11 @@ public class FragmentDetalleRutina extends Fragment {
             listaHijoRutina3.add(ejercicio);
         }
         padreExpandable3.setChildObjectList(listaHijoRutina3);
+    }
+
+    //Interface
+    public interface EmpezarRtna{
+        public void comenzarRutina(List<Integer> listaIdsEjsCal, List<Integer> listaIdsEjsRtna, List<Integer> listaIdsEjesEsti);
     }
 }
 

@@ -19,7 +19,7 @@
 
 
     <Button
-        android:id="@+id/botonEmpezar"
+        android:id="@+id/btnEmpezar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="150dp"

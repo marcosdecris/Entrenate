@@ -11,12 +11,13 @@ import com.example.marcos.appejercicios.Model.Rutina;
 import com.example.marcos.appejercicios.R;
 import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorRecycRutinas;
 import com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio;
+import com.example.marcos.appejercicios.View.DondeEntreno.ContenedorDondeEntreno;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRecycRutinas.ComunicadorRutinas{
+public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRecycRutinas.ComunicadorRutinas, FragmentDetalleRutina.EmpezarRtna{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
         transaction.replace(R.id.contenedorRutinas, fragment);
         transaction.commit();
     }
-
+    //Metodo para ir al detalle de la rutina
     @Override
     public void irADetalle(List<Integer> listaEjsCal, List<Integer> listaEjercicios, List<Integer> listaEjsEsti) {
         FragmentDetalleRutina fragmentDetalleRutina = new FragmentDetalleRutina();
@@ -47,7 +48,18 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
         cargarFragment(fragmentDetalleRutina);
     }
 
+    @Override
+    public void comenzarRutina(List<Integer> listaIdsEjsCal, List<Integer> listaIdsEjsRtna, List<Integer> listaIdsEjsEsti) {
+        FragmentEjercicioRutina fragmentEjercicioRutina = new FragmentEjercicioRutina();
+        Bundle bundle = new Bundle();
+        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaIdsEjsCal);
+        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_RUTINA, (ArrayList<Integer>) listaIdsEjsRtna);
+        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaIdsEjsEsti);
+        fragmentEjercicioRutina.setArguments(bundle);
+        cargarFragment(fragmentEjercicioRutina);
+    }
 
-    //Metodo para ir a la pantalla con el detalle de la rutina (Fragment)
+
+    //Metodo para comenzar la rutina
 
 }
