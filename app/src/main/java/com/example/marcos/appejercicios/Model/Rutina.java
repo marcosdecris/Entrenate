@@ -16,6 +16,7 @@ public class Rutina extends Entrenamiento {
     private Integer fotoTipo;
     private String tipo;
     private String zonaQueTrabaja;
+    private String descripcion;
 
 
     //Constructores
@@ -26,7 +27,7 @@ public class Rutina extends Entrenamiento {
         this.duracionEstimada = duracionEstimada;
     }
 
-    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjercicios, Integer logo, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja) {
+    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjercicios, Integer logo, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja, String descipcion) {
         super(nombre, dificultad, puntos);
         this.listaEjercicios = listaEjercicios;
         this.fotoTipo = fotoTipo;
@@ -34,6 +35,7 @@ public class Rutina extends Entrenamiento {
         this.zonaQueTrabaja = zonaQueTrabaja;
         this.logo = logo;
         this.duracionEstimada = duracionEstimada;
+        this.descripcion = descipcion;
     }
 
 

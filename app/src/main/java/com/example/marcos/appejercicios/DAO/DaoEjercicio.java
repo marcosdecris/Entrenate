@@ -91,7 +91,7 @@ public class DaoEjercicio {
 
     //Hardcore
     Ejercicio ejercicio1 = new Ejercicio(1,"Cinta", R.drawable.niveluno, 15, R.drawable.ejercicio1, video1, "15 Minutos", "Piernas", "aerobico", "Andador");
-    Ejercicio ejercicio2 = new Ejercicio(2,"Pectorales", R.drawable.nivelcuatro, 15, R.drawable.ejercicio2, video2, "15 Minutos", "Piernas", "musculacion", "Remo" );
+    Ejercicio ejercicio2 = new Ejercicio(2,"Pectorales", R.drawable.nivelcuatro, 15, R.drawable.ejercicio2bis, video2, "15 Minutos", "Piernas", "musculacion", "Remo" );
     Ejercicio ejercicio3 = new Ejercicio(3,"Escalador", R.drawable.niveldos, 15, R.drawable.ejercicio3, video1, "15 Minutos", "Piernas", "aerobico", "nu");
     Ejercicio ejercicio4 = new Ejercicio(4,"Mancuerna", R.drawable.niveltres, 25, R.drawable.ejercicio4, video2, "15 Minutos", "Piernas", "musculacion", "Andador");
     Ejercicio ejercicio5 = new Ejercicio(5,"Bicicleta", R.drawable.nivelcinco, 15, R.drawable.ejercicio5, video2, "15 Minutos", "Piernas", "aerobico", "Andador");

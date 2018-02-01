@@ -44,10 +44,10 @@ public class DaoRutina {
 
 
     //Creo las Rutinas
-    Rutina rutina1 = new Rutina("Antilope", R.drawable.niveluno, 15, lista1, R.drawable.antilope2, "1 Minuto", R.drawable.aerobico, "Aerobico", "Gluteos" );
-    Rutina rutina2 = new Rutina("Bison", R.drawable.niveldos, 20, lista2, R.drawable.bison, "1 Minuto", R.drawable.funcional, "Funcional", "Tronco Inferior" );
-    Rutina rutina3 = new Rutina("Elefante", R.drawable.nivelcuatro, 30, lista1, R.drawable.elephant, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps" );
-    Rutina rutina4 = new Rutina("Jaguar", R.drawable.niveltres, 15, lista3, R.drawable.jaguar, "1 Minuto", R.drawable.funcional, "Funcional", "Piernas" );
-    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.nivelcinco, 40, lista1, R.drawable.rhino, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps" );
+    Rutina rutina1 = new Rutina("Antilope", R.drawable.niveluno, 15, lista1, R.drawable.antilope2, "1 Minuto", R.drawable.aerobico, "Aerobico", "Gluteos", "Descripcion de la rutina" );
+    Rutina rutina2 = new Rutina("Bison", R.drawable.niveldos, 20, lista2, R.drawable.bison, "1 Minuto", R.drawable.funcional, "Funcional", "Tronco Inferior", "Descripcion de la rutina" );
+    Rutina rutina3 = new Rutina("Elefante", R.drawable.nivelcuatro, 30, lista1, R.drawable.elephant, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps", "Descripcion de la rutina" );
+    Rutina rutina4 = new Rutina("Jaguar", R.drawable.niveltres, 15, lista3, R.drawable.jaguar, "1 Minuto", R.drawable.funcional, "Funcional", "Piernas", "Descripcion de la rutina" );
+    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.nivelcinco, 40, lista1, R.drawable.rhino, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );
 
 }
