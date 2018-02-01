@@ -50,7 +50,7 @@ public class AdaptadorDndeEntreno extends RecyclerView.Adapter<AdaptadorDndeEntr
             @Override
             public void onClick(View v) {
                 //TODO -- Metodo para ir a detalle
-               comunicador3.irAMapa();
+               comunicador3.irAMapa(plaza.getDireccion());
             }
         });
     }
@@ -83,6 +83,6 @@ public class AdaptadorDndeEntreno extends RecyclerView.Adapter<AdaptadorDndeEntr
     }
 
     public interface Comunicador3 {
-        public void irAMapa( );
+        public void irAMapa(String direccion );
     }
 }

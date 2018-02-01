@@ -1,7 +1,10 @@
 package com.example.marcos.appejercicios.View.DondeEntreno;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -29,10 +32,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MapActivity extends AppCompatActivity {
     //Constantes
     private static final String TAG = "MapActivity";
     private static final String COARSE_LOCATION = Manifest.permission.ACCESS_COARSE_LOCATION;
+    public static final String CLAVE_DIRECCION = "Direccion";
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 12334;
     private static final float DEFAULT_ZOOM = 15f;
     private static final LatLngBounds LAT_LNG_BOUNDS = new LatLngBounds(new LatLng(-40, -168), new LatLng(71, 136));
@@ -42,6 +50,7 @@ public class MapActivity extends AppCompatActivity {
     private GoogleMap mMap;
     private FusedLocationProviderClient mfusedLocationProviderClient;
     private GeoDataClient mGeoDataClient;
+    private String ubicacionPlaza;
 
 
     @Override
@@ -49,7 +58,12 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        ubicacionPlaza = bundle.getString(CLAVE_DIRECCION);
         getLocationPermisiion();
+        TextView textView = findViewById(R.id.textViewMapNombre);
+        textView.setText(ubicacionPlaza);
     }
 
     //Inicializo el mapa
@@ -63,7 +77,8 @@ public class MapActivity extends AppCompatActivity {
                 mMap = googleMap;
 
                 if (mLocationPermissionGranted) {
-                    getDeviceLocation();
+                    geolocate();
+                   // getDeviceLocation();
                     //Chequear si no funciona el Coarse permission en esta linea
                     if (ActivityCompat.checkSelfPermission(MapActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(MapActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                         return;
@@ -73,6 +88,7 @@ public class MapActivity extends AppCompatActivity {
                     mMap.setMyLocationEnabled(true);
                     //Que muestre el boton de ir a tu ubicacion
                     mMap.getUiSettings().setMyLocationButtonEnabled(true);
+
 
 
                 }
@@ -109,6 +125,27 @@ public class MapActivity extends AppCompatActivity {
         } catch (SecurityException e) {
             Log.d(TAG, "getDeviceLocation: SecurityException " + e.getMessage());
         }
+    }
+
+    //Metodo para encontrar una direccion en google maps
+    public void geolocate(){
+        Log.d(TAG, "geolocate: geolocating");
+
+        Geocoder geocoder = new Geocoder(MapActivity.this);
+
+        List<Address> listaAdress = new ArrayList<>();
+        try {
+            listaAdress = geocoder.getFromLocationName(ubicacionPlaza, 1);
+        }catch (IOException e){
+            Log.d(TAG, "geolocate: IOException " + e.getMessage());
+        }
+        if(listaAdress.size() > 0 ){
+            Address address = listaAdress.get(0);
+            Log.d(TAG, "geolocate: found a location" + address.toString());
+
+            moveCamara(new LatLng(address.getLatitude(), address.getLongitude()), DEFAULT_ZOOM, ubicacionPlaza);
+        }
+
     }
 
     //Metodo para mover la camara del mapa a un punto

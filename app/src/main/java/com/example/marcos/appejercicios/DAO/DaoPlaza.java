@@ -26,9 +26,9 @@ public class DaoPlaza {
 
 
 
-    Plaza plaza1 = new Plaza("Parque Centenario");
-    Plaza plaza2 = new Plaza("Parque Chacabuco");
-    Plaza plaza3 = new Plaza("Plaza Rubén Darío");
-    Plaza plaza4 = new Plaza("Parque Patricios");
-    Plaza plaza5 = new Plaza("Parque Indoamericano");
+    Plaza plaza1 = new Plaza("Parque Centenario", " Antonio Machado y Leopoldo Marechal");
+    Plaza plaza2 = new Plaza("Parque Chacabuco", "Emilio Mitre y Av. Asamblea");
+    Plaza plaza3 = new Plaza("Plaza Rubén Darío", "Av. Del Libertador y Dr. Luis Agote");
+    Plaza plaza4 = new Plaza("Parque Patricios", "Patagones y Monteagudo");
+    Plaza plaza5 = new Plaza("Parque Indoamericano", " Av. Castañares y Av. Escalada");
 }

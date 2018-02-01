@@ -8,15 +8,20 @@ public class Plaza {
     //Atts
     private String Nombre;
     private Integer distancia;
-    private String ubicacion;
+    private String direccion;
 
     //Constructor
-    public Plaza(String nombre) {
-        Nombre = nombre;
+    public Plaza(String nombre, String direccion) {
+        this.Nombre = nombre;
+        this.direccion = direccion;
     }
 
     //Getters
     public String getNombre() {
         return Nombre;
+    }
+
+    public String getDireccion() {
+        return direccion;
     }
 }
