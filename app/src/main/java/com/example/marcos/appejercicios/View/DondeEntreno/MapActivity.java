@@ -76,7 +76,6 @@ public class MapActivity extends AppCompatActivity {
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
-                Toast.makeText(MapActivity.this, "Map Is ready", Toast.LENGTH_SHORT).show();
                 mMap = googleMap;
 
                 if (mLocationPermissionGranted) {
