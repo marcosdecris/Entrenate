@@ -94,6 +94,7 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
         public void bindCelda (Ejercicio ejercicio){
             nombre.setText(ejercicio.getNombre());
             zonaTrabaja.setText(ejercicio.getZonaQueTrabaja());
+            //TODO creo que hay un problema con el tamano de la imagen
             foto.setImageResource(ejercicio.getFoto());
             dificultad.setImageResource(ejercicio.getDificultad());
 //            RequestOptions ro = new RequestOptions().placeholder(R.drawable.loading4).error(R.drawable.errornews);
