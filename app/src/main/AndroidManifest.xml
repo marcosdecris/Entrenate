@@ -32,7 +32,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.Aparatos.ContenedorAparatos" />
-        <activity android:name=".View.Ejercicios.ViewPagerEjercicios" />
         <activity android:name=".View.Ejercicios.ContenedorEjercicios" />
         <activity android:name=".View.Rutinas.ContenedorRutinas" />
         <activity android:name=".View.DondeEntreno.ContenedorDondeEntreno" />

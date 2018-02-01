@@ -9,6 +9,8 @@ import java.util.List;
 public class Rutina extends Entrenamiento {
     //Atts
     private List<Integer> listaEjercicios;
+    private List<Integer> listaEjsCalentamiento;
+    private List<Integer> listaEjesEstiramiento;
     private Long tiempo;
     private Long mejorTiempo;
     private Integer logo;
@@ -27,9 +29,11 @@ public class Rutina extends Entrenamiento {
         this.duracionEstimada = duracionEstimada;
     }
 
-    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjercicios, Integer logo, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja, String descipcion) {
+    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjsCalentamiento,List<Integer> listaEjercicios, List<Integer> listaEjesEstiramiento, Integer logo, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja, String descipcion) {
         super(nombre, dificultad, puntos);
         this.listaEjercicios = listaEjercicios;
+        this.listaEjsCalentamiento = listaEjsCalentamiento;
+        this.listaEjesEstiramiento = listaEjesEstiramiento;
         this.fotoTipo = fotoTipo;
         this.tipo = tipo;
         this.zonaQueTrabaja = zonaQueTrabaja;
@@ -71,5 +75,13 @@ public class Rutina extends Entrenamiento {
 
     public String getZonaQueTrabaja() {
         return zonaQueTrabaja;
+    }
+
+    public List<Integer> getListaEjsCalentamiento() {
+        return listaEjsCalentamiento;
+    }
+
+    public List<Integer> getListaEjesEstiramiento() {
+        return listaEjesEstiramiento;
     }
 }

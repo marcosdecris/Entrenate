@@ -55,7 +55,7 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
             @Override
             public void onClick(View v) {
                 //TODO -- Metodo para ir a detalle
-                comunicadorRutinas.irADetalle(rutina.getListaEjercicios());
+                comunicadorRutinas.irADetalle(rutina.getListaEjsCalentamiento(), rutina.getListaEjercicios(), rutina.getListaEjesEstiramiento());
             }
         });
     }
@@ -104,6 +104,6 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
     }
 
     public interface ComunicadorRutinas {
-        public void irADetalle(List<Integer> listaEjercicios);
+        public void irADetalle(List<Integer> listaEjsCal, List<Integer> listaEjercicios, List<Integer> listaEjsEstir);
     }
 }

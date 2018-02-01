@@ -61,6 +61,6 @@ public class AdaptadorExpandableRecycler extends ExpandableRecyclerAdapter<ViewH
 
         Ejercicio ejercicio = (Ejercicio) o;
         viewHolderHijo.textViewNombre.setText(ejercicio.getNombre());
-        //viewHolderHijo.imageViewVideo.setImageResource(ejercicio.getFoto());
+        viewHolderHijo.imageViewVideo.setImageResource(ejercicio.getFoto());
     }
 }

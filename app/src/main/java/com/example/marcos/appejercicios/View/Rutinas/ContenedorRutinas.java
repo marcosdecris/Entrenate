@@ -37,10 +37,12 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
     }
 
     @Override
-    public void irADetalle(List<Integer> listaEjercicios) {
+    public void irADetalle(List<Integer> listaEjsCal, List<Integer> listaEjercicios, List<Integer> listaEjsEsti) {
         FragmentDetalleRutina fragmentDetalleRutina = new FragmentDetalleRutina();
         Bundle bundle = new Bundle();
+        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaEjsCal);
         bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_RUTINA, (ArrayList<Integer>) listaEjercicios);
+        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaEjsEsti);
         fragmentDetalleRutina.setArguments(bundle);
         cargarFragment(fragmentDetalleRutina);
     }
