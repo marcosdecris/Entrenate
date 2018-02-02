@@ -12,6 +12,8 @@ import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorEjercicios;
 import com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio;
 
 public class ContenedorEjercicios extends AppCompatActivity implements AdaptadorEjercicios.Comunicador2{
+    //Tag
+    public static final String TAG_FRAGMENT_VIEWPAGER = "Fragment viewPager";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,17 +21,25 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         setContentView(R.layout.activity_contenedor_ejercicio);
 
         FragmentViewPagerEjercicio fragmentViewPagerEjercicio = new FragmentViewPagerEjercicio();
-        cargarFragment(fragmentViewPagerEjercicio);
+        cargarFragment(fragmentViewPagerEjercicio, TAG_FRAGMENT_VIEWPAGER);
 
     }
 
 
     //Hago el metodo para cargar fragments
-    public void cargarFragment (Fragment fragment){
+    public void cargarFragment (Fragment fragment, String tag){
         FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.contenedorEjercicios, fragment);
-        transaction.commit();
+        //Consigo el fragment que esta en el contenedor
+        Fragment fragmentContenedor = manager.findFragmentById(R.id.contenedorEjercicios);
+        if(fragmentContenedor == null || fragmentContenedor.getTag() != tag){
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.replace(R.id.contenedorEjercicios, fragment);
+            if(fragmentContenedor != null ){
+                //Esto me vuelve al fragment anterior
+                transaction.addToBackStack(null);
+            }
+            transaction.commit();
+        }
     }
 
     //Metodo para ir a la pantalla del ejercicio (Fragment)
@@ -39,7 +49,7 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         Bundle bundle = new Bundle();
         bundle.putSerializable(FragmentEjercicio.CLAVE_EJERCICIO, ejercicio);
         fragmentEjercicio.setArguments(bundle);
-        cargarFragment(fragmentEjercicio);
+        cargarFragment(fragmentEjercicio, TAG_FRAGMENT_VIEWPAGER);
     }
 
 }

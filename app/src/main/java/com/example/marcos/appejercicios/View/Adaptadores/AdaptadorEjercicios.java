@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import com.example.marcos.appejercicios.Model.Ejercicio;
 import com.example.marcos.appejercicios.R;
+import com.example.marcos.appejercicios.View.Aparatos.ContenedorAparatos;
+import com.example.marcos.appejercicios.View.Ejercicios.ContenedorEjercicios;
 
 import java.util.List;
 
@@ -23,11 +25,9 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
     private Context context;
     private List<Ejercicio> listaEjercicio;
     private Comunicador2 comunicador2;
-    private Integer tag;
-    //Ejercicios Tag = 1, Aparatos Tag = 2
 
     //Constructor
-    public AdaptadorEjercicios(Context context, List<Ejercicio> listaEjercicio ) {
+    public AdaptadorEjercicios(Context context, List<Ejercicio> listaEjercicio) {
         this.context = context;
         this.listaEjercicio = listaEjercicio;
         this.comunicador2 = (Comunicador2) context;
@@ -55,7 +55,8 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
             @Override
             public void onClick(View v) {
                 //TODO -- Metodo para ir a detalle
-            comunicador2.irAEjercicio(ejercicio);
+                //Para elegir que etiqueta le mando para el Backstack
+                    comunicador2.irAEjercicio(ejercicio);
             }
         });
     }
@@ -66,7 +67,6 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
     public int getItemCount() {
         return listaEjercicio.size();
     }
-
 
 
 
