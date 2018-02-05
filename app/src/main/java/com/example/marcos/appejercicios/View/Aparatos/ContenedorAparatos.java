@@ -42,7 +42,7 @@ public class ContenedorAparatos extends AppCompatActivity implements AdaptadorGr
             FragmentTransaction transaction = manager.beginTransaction();
             transaction.replace(R.id.contenedorFragmentsAparatos, fragment);
             //TODO -- chequear que no falta data en el if
-            if(fragmentContenedor != null){
+            if(fragmentContenedor != null ){
                 transaction.addToBackStack(null);
             }
             transaction.commit();

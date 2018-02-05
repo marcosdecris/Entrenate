@@ -50,4 +50,6 @@ public class FragmentEjercicio extends Fragment {
         return view;
     }
 
+
+
 }

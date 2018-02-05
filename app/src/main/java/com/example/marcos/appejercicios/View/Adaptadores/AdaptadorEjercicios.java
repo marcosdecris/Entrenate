@@ -55,8 +55,7 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
             @Override
             public void onClick(View v) {
                 //TODO -- Metodo para ir a detalle
-                //Para elegir que etiqueta le mando para el Backstack
-                    comunicador2.irAEjercicio(ejercicio);
+                comunicador2.irAEjercicio(ejercicio);
             }
         });
     }

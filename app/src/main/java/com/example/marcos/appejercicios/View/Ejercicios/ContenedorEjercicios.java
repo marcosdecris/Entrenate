@@ -14,14 +14,15 @@ import com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio;
 public class ContenedorEjercicios extends AppCompatActivity implements AdaptadorEjercicios.Comunicador2{
     //Tag
     public static final String TAG_FRAGMENT_VIEWPAGER = "Fragment viewPager";
+    public static final String TAG_FRAGMENT_EJERCICIO = "Fragment ejercicio";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedor_ejercicio);
 
-        FragmentViewPagerEjercicio fragmentViewPagerEjercicio = new FragmentViewPagerEjercicio();
-        cargarFragment(fragmentViewPagerEjercicio, TAG_FRAGMENT_VIEWPAGER);
+
+        cargarFragment(new FragmentViewPagerEjercicio(), TAG_FRAGMENT_VIEWPAGER);
 
     }
 
@@ -33,8 +34,8 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         Fragment fragmentContenedor = manager.findFragmentById(R.id.contenedorEjercicios);
         if(fragmentContenedor == null || fragmentContenedor.getTag() != tag){
             FragmentTransaction transaction = manager.beginTransaction();
-            transaction.replace(R.id.contenedorEjercicios, fragment);
-            if(fragmentContenedor != null ){
+            transaction.replace(R.id.contenedorEjercicios, fragment, tag);
+            if(fragmentContenedor != null && fragmentContenedor.getTag() != TAG_FRAGMENT_EJERCICIO){
                 //Esto me vuelve al fragment anterior
                 transaction.addToBackStack(null);
             }
@@ -49,7 +50,7 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         Bundle bundle = new Bundle();
         bundle.putSerializable(FragmentEjercicio.CLAVE_EJERCICIO, ejercicio);
         fragmentEjercicio.setArguments(bundle);
-        cargarFragment(fragmentEjercicio, TAG_FRAGMENT_VIEWPAGER);
+        cargarFragment(fragmentEjercicio, TAG_FRAGMENT_EJERCICIO);
     }
 
 }

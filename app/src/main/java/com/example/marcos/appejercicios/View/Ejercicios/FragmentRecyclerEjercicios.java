@@ -28,11 +28,6 @@ public class FragmentRecyclerEjercicios extends Fragment {
     private View view;
     private ImageView imageViewFotoTipo;
 
-    //Constructores
-    public FragmentRecyclerEjercicios() {
-        // Required empty public constructor
-    }
-
 
 
     @Override

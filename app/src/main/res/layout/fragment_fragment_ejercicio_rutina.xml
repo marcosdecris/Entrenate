@@ -5,21 +5,86 @@
     android:orientation="vertical"
     tools:context="com.example.marcos.appejercicios.View.Rutinas.FragmentEjercicioRutina">
 
-
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
     <VideoView
         android:id="@+id/videoViewRtna"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_margin="5dp"/>
+        />
+    <Button
+        android:id="@+id/botonPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Pausa"/>
+    <Button
+        android:id="@+id/botonResumir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Continuar"/>
+    <TextView
+        android:id="@+id/textViewTEjACtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:hint="aaaaaa"
+        android:layout_marginBottom="4dp"/>
+</FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotonRutina"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Chronometer
+            android:id="@+id/cronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="00:00"
+            android:textSize="30sp"
+            android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/textViewRtnaNombEj"
+        android:id="@+id/textViewEjProximo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:hint="Nombre Ejercicio"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="4dp"
+        android:gravity="center"
         android:layout_marginTop="10dp"/>
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Empezar"
+                android:textSize="30dp"/>
+            <Button
+                android:id="@+id/buttonSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Siguiente"
+                android:textSize="30dp"/>
+            <Button
+                android:id="@+id/buttonFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Finalizar"
+                android:textSize="30dp"/>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
 </LinearLayout>
