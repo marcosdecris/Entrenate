@@ -11,13 +11,14 @@
         android:id="@+id/tabLayoutRutinas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabMode="scrollable"
+
         app:tabGravity="fill"
         android:background="@color/colorAccent"
         app:tabTextColor="@color/colorTabSelected"
         app:tabSelectedTextColor="@color/colorPrimary"
         app:tabIndicatorHeight="4dp"
         app:tabIndicatorColor="@color/colorPrimary"
+
         />
     <android.support.v4.view.ViewPager
         android:id="@+id/viewPagerRutinas"
