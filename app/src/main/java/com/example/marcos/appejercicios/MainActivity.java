@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         ImageView aparatos = (ImageView) findViewById(R.id.imageViewMainAparatos);
         ImageView rutinas = (ImageView) findViewById(R.id.imageViewMainRutinas);

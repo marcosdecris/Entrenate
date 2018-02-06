@@ -1,9 +1,11 @@
 package com.example.marcos.appejercicios.View.Adaptadores;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -25,6 +27,7 @@ public class AdaptadorEjercicios extends RecyclerView.Adapter<AdaptadorEjercicio
     private Context context;
     private List<Ejercicio> listaEjercicio;
     private Comunicador2 comunicador2;
+
 
     //Constructor
     public AdaptadorEjercicios(Context context, List<Ejercicio> listaEjercicio) {

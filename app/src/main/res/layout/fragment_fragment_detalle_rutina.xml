@@ -5,28 +5,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <ImageView
         android:id="@+id/imagenPreviaDetalleRutina"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         />
 
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerRutinasExpandable"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:elevation="2dp"/>
 
 
     <Button
         android:id="@+id/btnEmpezar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_gravity="bottom|center"
+        android:elevation="4dp"
         android:text="EMPEZAR"
         android:textSize="30sp"
         android:textColor="#ffffff"
         android:background="#0059ff"
         />
-
+</FrameLayout>
 </LinearLayout>
