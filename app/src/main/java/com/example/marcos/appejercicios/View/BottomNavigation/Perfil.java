@@ -1,82 +1,34 @@
-package com.example.marcos.appejercicios;
+package com.example.marcos.appejercicios.View.BottomNavigation;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
-import com.example.marcos.appejercicios.DAO.DaoEjercicio;
-import com.example.marcos.appejercicios.View.Aparatos.ContenedorAparatos;
-import com.example.marcos.appejercicios.View.BottomNavigation.Actividades;
-import com.example.marcos.appejercicios.View.BottomNavigation.Cronometro;
-import com.example.marcos.appejercicios.View.BottomNavigation.Perfil;
-import com.example.marcos.appejercicios.View.DondeEntreno.ContenedorDondeEntreno;
-import com.example.marcos.appejercicios.View.Ejercicios.ContenedorEjercicios;
-import com.example.marcos.appejercicios.View.Rutinas.ContenedorRutinas;
+import com.example.marcos.appejercicios.MainActivity;
+import com.example.marcos.appejercicios.R;
 
-public class MainActivity extends AppCompatActivity {
+public class Perfil extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        ImageView aparatos = (ImageView) findViewById(R.id.imageViewMainAparatos);
-        ImageView rutinas = (ImageView) findViewById(R.id.imageViewMainRutinas);
-        ImageView ejercicios = (ImageView) findViewById(R.id.imageViewMainEjercicios);
-        ImageView dondeEntreno = (ImageView) findViewById(R.id.imageViewMainDondeEntreno);
+        setContentView(R.layout.activity_perfil);
 
         activarBottomNavigation();
-
-
-        //Listeners para las views
-        aparatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cambiarVista(ContenedorAparatos.class);
-            }
-        });
-
-        rutinas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cambiarVista(ContenedorRutinas.class);
-            }
-        });
-
-        ejercicios.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cambiarVista(ContenedorEjercicios.class);
-            }
-        });
-
-        dondeEntreno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                cambiarVista(ContenedorDondeEntreno.class);
-            }
-        });
-
-
-
-
     }
+
 
     public void cambiarVista( Class activity){
         Intent intent = new Intent(this, activity);
         startActivity(intent);
     }
 
-
     public void activarBottomNavigation(){
         //Bottom Navigation, lo encuentro
-        AHBottomNavigation bottomNavigation = findViewById(R.id.bottom_navigation);
+        AHBottomNavigation bottomNavigation = findViewById(R.id.bottom_navigation_perfil);
         //Creo los items
         AHBottomNavigationItem item1 = new AHBottomNavigationItem("Inicio",R.drawable.ic_inicio );
         AHBottomNavigationItem item2 = new AHBottomNavigationItem("Perfil",R.drawable.ic_usuario );
@@ -90,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.addItem(item4);
 
         //Elijo que item va a mostrar primero por default
-        bottomNavigation.setCurrentItem(0);
+        bottomNavigation.setCurrentItem(1);
         // Set background color
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#e9f9e941"));
         //Color del item actual
@@ -107,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTabSelected(int position, boolean wasSelected) {
                 switch (position){
-                    case 1:
-                        cambiarVista(Perfil.class);
+                    case 0:
+                        cambiarVista(MainActivity.class);
                         break;
                     case 2:
                         cambiarVista(Cronometro.class);
@@ -122,6 +74,4 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
 }

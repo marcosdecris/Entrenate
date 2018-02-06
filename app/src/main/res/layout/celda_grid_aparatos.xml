@@ -42,7 +42,7 @@
             android:id="@+id/imageViewGridDificultad"
             android:layout_width="30dp"
             android:layout_height="14dp"
-            android:layout_marginLeft="160dp"
+            android:layout_marginLeft="145dp"
             android:layout_marginTop="5dp"
             android:scaleType="fitCenter"
             android:layout_below="@id/imageViewImagenGrid"/>

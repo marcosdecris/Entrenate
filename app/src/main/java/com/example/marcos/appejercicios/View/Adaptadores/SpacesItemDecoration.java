@@ -11,6 +11,8 @@ import android.view.View;
 public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
     private final int mSpace;
 
+    //Esta clase es para setear el espacio entre los items del Recycler con Grid de Aparatos
+
     //Constructor
     public SpacesItemDecoration(int space) {
         this.mSpace = space;
