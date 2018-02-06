@@ -33,8 +33,10 @@ public class FragmentViewPagerRutina extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        if(tipoRutina.size() == 0 ){
+            cargarTiposRutina();
+        }
 
-        cargarTiposRutina();
         // Inflate the layout for this fragment
       View view = inflater.inflate(R.layout.fragment_fragment_view_pager_rutina, container, false);
       ViewPager viewPagerRutina = view.findViewById(R.id.viewPagerRutinas);

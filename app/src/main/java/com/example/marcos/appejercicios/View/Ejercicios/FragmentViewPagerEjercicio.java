@@ -31,9 +31,14 @@ public class FragmentViewPagerEjercicio extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        cargarLista();
+
+        if(tiposEj.size() == 0){
+            cargarLista();
+        }
+
         // Inflate the layout for this fragment or reuse the existing one
         View view =  inflater.inflate(R.layout.fragment_fragment_view_pager, container, false);
+
         ViewPager viewPager = view.findViewById(R.id.viewPagerEjercicios);
 
         //Le paso al adaptador del ViewPager la lista de Strings de tipo de Ejercicios
@@ -41,22 +46,11 @@ public class FragmentViewPagerEjercicio extends Fragment {
         viewPager.setAdapter(adaptadorViewPagerEjs);
         TabLayout tabLayout = view.findViewById(R.id.tabLayoutEjercicios);
         tabLayout.setupWithViewPager(viewPager);
-        Toast.makeText(getContext(), "OnCreate", Toast.LENGTH_SHORT).show();
+
 
         return view;
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        Toast.makeText(getContext(), "OnStart", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        Toast.makeText(getContext(), "onResume", Toast.LENGTH_LONG).show();
-    }
 
     //TODO -- Revisar que los tipos de ej no esten hardcodeados, fijarse en Enterate
     public void cargarLista(){
