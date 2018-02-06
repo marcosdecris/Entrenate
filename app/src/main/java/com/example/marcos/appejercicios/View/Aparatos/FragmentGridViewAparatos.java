@@ -14,6 +14,7 @@ import com.example.marcos.appejercicios.DAO.DaoAparatos;
 import com.example.marcos.appejercicios.Model.Aparato;
 import com.example.marcos.appejercicios.R;
 import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorGrid;
+import com.example.marcos.appejercicios.View.Adaptadores.SpacesItemDecoration;
 
 import java.util.ArrayList;
 
@@ -47,7 +48,8 @@ public class FragmentGridViewAparatos extends Fragment {
         recyclerView.setAdapter(adaptadorGrid);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
-
+        SpacesItemDecoration decoration = new SpacesItemDecoration(16);
+        recyclerView.addItemDecoration(decoration);
 
         return view;
     }
