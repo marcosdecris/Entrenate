@@ -16,9 +16,9 @@ public class DaoRutina {
 
 
     //Lista de ID delos ejercicios
-    List<Integer> lista1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-    List<Integer> lista2 = new ArrayList<>(Arrays.asList(5, 6, 7, 8));
-    List<Integer> lista3 = new ArrayList<>(Arrays.asList(1));
+    List<Integer> lista1 = new ArrayList<>(Arrays.asList(7,11, 7, 11));
+    List<Integer> lista2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 9, 8));
+    List<Integer> lista3 = new ArrayList<>(Arrays.asList(5,6,5,6));
 
     public ArrayList<Rutina> obtenerRutinas (){
         ArrayList<Rutina> rutinaList = new ArrayList<>();
@@ -44,10 +44,10 @@ public class DaoRutina {
 
 
     //Creo las Rutinas
-    Rutina rutina1 = new Rutina("Antilope", R.drawable.niveluno, 15, lista1, lista1, lista1, R.drawable.antilope2, "1 Minuto", R.drawable.aerobico, "Aerobico", "Gluteos", "Descripcion de la rutina" );
-    Rutina rutina2 = new Rutina("Bison", R.drawable.niveldos, 20, lista1, lista2, lista1, R.drawable.bison, "1 Minuto", R.drawable.funcional, "Funcional", "Tronco Inferior", "Descripcion de la rutina" );
-    Rutina rutina3 = new Rutina("Elefante", R.drawable.nivelcuatro, 30, lista1, lista1, lista1, R.drawable.elephant, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps", "Descripcion de la rutina" );
-    Rutina rutina4 = new Rutina("Jaguar", R.drawable.niveltres, 15, lista1, lista3, lista1, R.drawable.jaguar, "1 Minuto", R.drawable.funcional, "Funcional", "Piernas", "Descripcion de la rutina" );
-    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.nivelcinco, 40, lista1, lista1, lista1, R.drawable.rhino, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );
+    Rutina rutina1 = new Rutina("Antilope", R.drawable.niveluno, 15, lista1, lista2, lista3, R.drawable.antilope2, "1 Minuto", R.drawable.aerobico, "Aerobico", "Gluteos", "Descripcion de la rutina" );
+    Rutina rutina2 = new Rutina("Bison", R.drawable.niveldos, 20, lista1, lista2, lista3, R.drawable.bison, "1 Minuto", R.drawable.funcional, "Funcional", "Tronco Inferior", "Descripcion de la rutina" );
+    Rutina rutina3 = new Rutina("Elefante", R.drawable.nivelcuatro, 30, lista1, lista2, lista3, R.drawable.elephant, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps", "Descripcion de la rutina" );
+    Rutina rutina4 = new Rutina("Jaguar", R.drawable.niveltres, 15, lista1, lista2, lista3, R.drawable.jaguar, "1 Minuto", R.drawable.funcional, "Funcional", "Piernas", "Descripcion de la rutina" );
+    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.nivelcinco, 40, lista1, lista2, lista3, R.drawable.rhino, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );
 
 }

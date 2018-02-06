@@ -111,7 +111,7 @@ public class FragmentDetalleRutina extends Fragment {
         DaoEjCalentamiento daoEjCalentamiento = new DaoEjCalentamiento();
         listaDeEjerciciosCalent = daoEjCalentamiento.buscarEjsCalId(listaIdsEjsCalent);
 
-        //Le paso la lista de Ejercicios al Padre2
+        //Le paso la lista de Ejercicios al Padre1
         listaHijoRutina1 = new ArrayList<>();
         for (Ejercicio ejercicio : listaDeEjerciciosCalent) {
             listaHijoRutina1.add(ejercicio);
@@ -138,7 +138,7 @@ public class FragmentDetalleRutina extends Fragment {
         DaoEjEstiramiento daoEjEstiramiento = new DaoEjEstiramiento();
         listaDeEjerciciosEstir = daoEjEstiramiento.buscarEjsEstiId(listaIdsEjsEstir);
 
-        //Le paso la lista de Ejercicios al Padre2
+        //Le paso la lista de Ejercicios al Padre3
         listaHijoRutina3 = new ArrayList<>();
         for (Ejercicio ejercicio : listaDeEjerciciosEstir) {
             listaHijoRutina3.add(ejercicio);

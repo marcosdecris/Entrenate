@@ -17,10 +17,10 @@ public class DaoEjEstiramiento {
 
     //Buscar todos los Ejercicios
     public List<Ejercicio> buscarTodosEjsEsti() {
-        ejercicioList.add(ejercicio1);
-        ejercicioList.add(ejercicio2);
-        ejercicioList.add(ejercicio3);
-        ejercicioList.add(ejercicio4);
+        ejercicioList.add(ejercicio5);
+        ejercicioList.add(ejercicio6);
+        ejercicioList.add(ejercicio5);
+        ejercicioList.add(ejercicio6);
         ejercicioList.add(ejercicio5);
         return ejercicioList;
     }
@@ -43,16 +43,32 @@ public class DaoEjEstiramiento {
 
 
     //Variables para videos
-    String video1 = "android.resource://com.example.marcos.appejercicios/" + R.raw.prueba;
-    String video2 = "android.resource://com.example.marcos.appejercicios/" + R.raw.prueba2;
+    String videoAbdominales = "android.resource://com.example.marcos.appejercicios/"+ R.raw.abdominales;
+    String videoBurpees = "android.resource://com.example.marcos.appejercicios/"+ R.raw.burpees;
+    String videoCaderas = "android.resource://com.example.marcos.appejercicios/"+ R.raw.caderas;
+    String videoEliptica = "android.resource://com.example.marcos.appejercicios/"+ R.raw.eliptica;
+    String videoPecho = "android.resource://com.example.marcos.appejercicios/"+ R.raw.pecho_1;
+    String videoJumping = "android.resource://com.example.marcos.appejercicios/"+ R.raw.jumping_jacks;
+    String videoRodillas = "android.resource://com.example.marcos.appejercicios/"+ R.raw.rodillas_arriba;
+    String videoEstiramientoUno = "android.resource://com.example.marcos.appejercicios/"+ R.raw.estiramiento_1;
+    String videoEstiramientoAb = "android.resource://com.example.marcos.appejercicios/"+ R.raw.estiramiento_abdominales;
+    String videoPiernas = "android.resource://com.example.marcos.appejercicios/"+ R.raw.piernas;
+    String videoRemo = "android.resource://com.example.marcos.appejercicios/"+ R.raw.remo;
+    String videoSaltos = "android.resource://com.example.marcos.appejercicios/"+ R.raw.saltos_cortos;
 
     //Hardcore
-    Ejercicio ejercicio1 = new Ejercicio(1, "Cinta", R.drawable.niveluno, 15, R.drawable.ejercicio1, video1, "15 Minutos", "Piernas", "aerobico", "Andador");
-    Ejercicio ejercicio2 = new Ejercicio(2, "Pectorales", R.drawable.nivelcuatro, 15, R.drawable.ejercicio2bis, video2, "15 Minutos", "Piernas", "musculacion", "Remo");
-    Ejercicio ejercicio3 = new Ejercicio(3, "Escalador", R.drawable.niveldos, 15, R.drawable.ejercicio3, video1, "15 Minutos", "Piernas", "aerobico", "nu");
-    Ejercicio ejercicio4 = new Ejercicio(4, "Mancuerna", R.drawable.niveltres, 25, R.drawable.ejercicio4, video2, "15 Minutos", "Piernas", "musculacion", "Andador");
-    Ejercicio ejercicio5 = new Ejercicio(5, "Bicicleta", R.drawable.nivelcinco, 15, R.drawable.ejercicio5, video2, "15 Minutos", "Piernas", "aerobico", "Andador");
-    Ejercicio ejercicio6 = new Ejercicio(6, "Bicicleta", R.drawable.nivelcinco, 15, R.drawable.ejercicio5, video1, "15 Minutos", "Piernas", "funcional", "Andador");
-    Ejercicio ejercicio7 = new Ejercicio(7, "Bicicleta", R.drawable.nivelcinco, 15, R.drawable.ejercicio5, video1, "15 Minutos", "Piernas", "funcional", "Remo");
-    Ejercicio ejercicio8 = new Ejercicio(8, "Bicicleta", R.drawable.nivelcinco, 15, R.drawable.ejercicio5, video2, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio1 = new Ejercicio(1,"Abdominales", R.drawable.niveluno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "15 Minutos", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio2 = new Ejercicio(2,"Burpees", R.drawable.nivelcuatro, 15, R.drawable.ejercicio_flexiones, videoBurpees, "15 Minutos", "Piernas", "musculacion", "Remo" );
+    Ejercicio ejercicio3 = new Ejercicio(3,"Laterales", R.drawable.niveldos, 15, R.drawable.ejercicio_caderas, videoCaderas, "15 Minutos", "Piernas", "aerobico", "nu");
+    Ejercicio ejercicio4 = new Ejercicio(4,"Eliptica", R.drawable.niveltres, 25, R.drawable.ejercicio_eliptica, videoEliptica, "15 Minutos", "Piernas", "musculacion", "Andador");
+    Ejercicio ejercicio5 = new Ejercicio(5,"Estiramiento Brazos", R.drawable.nivelcinco, 15, R.drawable.estiramiento_brazos, videoEstiramientoUno, "15 Minutos", "Piernas", "aerobico", "Andador");
+    Ejercicio ejercicio6 = new Ejercicio(6,"Estiramiento Abdominales", R.drawable.nivelcinco, 15, R.drawable.estiramiento_gluteos, videoEstiramientoAb, "15 Minutos", "Piernas", "funcional", "Andador");
+    Ejercicio ejercicio7 = new Ejercicio(7,"Jumping Jacks", R.drawable.nivelcinco, 15, R.drawable.ejercicio_brazos_5, videoJumping, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio8 = new Ejercicio(8,"Pectorales", R.drawable.nivelcinco, 15, R.drawable.ejercicio_brazos_3, videoPecho, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio9 = new Ejercicio(9,"Isquiotibiales", R.drawable.nivelcinco, 15, R.drawable.ejercicio_piernas, videoPiernas, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio10 = new Ejercicio(10,"Remo", R.drawable.nivelcinco, 15, R.drawable.ejercicio_remo, videoRemo, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio11 = new Ejercicio(11,"Rodillas Arriba", R.drawable.nivelcinco, 15, R.drawable.ejercicio_flexiones, videoRodillas, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio12 = new Ejercicio(12,"Multi Salto", R.drawable.nivelcinco, 15, R.drawable.ejercicio_pasadas_2, videoSaltos, "15 Minutos", "Piernas", "funcional", "Remo");
+
+
 }
