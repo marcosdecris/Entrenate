@@ -114,7 +114,7 @@ public class ContenedorAparatos extends AppCompatActivity implements AdaptadorGr
         // Set background color
         bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#e9f9e941"));
         //Color del item actual
-        //bottomNavigation.setAccentColor(Color.parseColor("#ffffff"));
+        bottomNavigation.setAccentColor(Color.parseColor("#ffffff"));
 
         // Disable the translation inside the CoordinatorLayout
         bottomNavigation.setBehaviorTranslationEnabled(true);

@@ -29,6 +29,8 @@ public class DaoEjercicio {
         ejercicioList.add(ejercicio3);
         ejercicioList.add(ejercicio4);
         ejercicioList.add(ejercicio9);
+        ejercicioList.add(ejercicio10);
+        ejercicioList.add(ejercicio12);
         return ejercicioList;
     }
 
@@ -104,11 +106,11 @@ public class DaoEjercicio {
     Ejercicio ejercicio4 = new Ejercicio(4,"Eliptica", R.drawable.niveltres, 25, R.drawable.ejercicio_eliptica, videoEliptica, "15 Minutos", "Piernas", "musculacion", "Andador");
     Ejercicio ejercicio5 = new Ejercicio(5,"Estiramiento Brazos", R.drawable.nivelcinco, 15, R.drawable.estiramiento_brazos, videoEstiramientoUno, "15 Minutos", "Piernas", "aerobico", "Andador");
     Ejercicio ejercicio6 = new Ejercicio(6,"Estiramiento Abdominales", R.drawable.nivelcinco, 15, R.drawable.estiramiento_gluteos, videoEstiramientoAb, "15 Minutos", "Piernas", "funcional", "Andador");
-    Ejercicio ejercicio7 = new Ejercicio(7,"Jumping Jacks", R.drawable.nivelcinco, 15, R.drawable.ejercicio_brazos_5, videoJumping, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio7 = new Ejercicio(7,"Jumping Jacks", R.drawable.nivelcinco, 15, R.drawable.ejercicios_jumping_jacks, videoJumping, "15 Minutos", "Piernas", "funcional", "Remo");
     Ejercicio ejercicio8 = new Ejercicio(8,"Pectorales", R.drawable.nivelcinco, 15, R.drawable.ejercicio_brazos_3, videoPecho, "15 Minutos", "Piernas", "funcional", "Remo");
     Ejercicio ejercicio9 = new Ejercicio(9,"Isquiotibiales", R.drawable.nivelcinco, 15, R.drawable.ejercicio_piernas, videoPiernas, "15 Minutos", "Piernas", "funcional", "Remo");
     Ejercicio ejercicio10 = new Ejercicio(10,"Remo", R.drawable.nivelcinco, 15, R.drawable.ejercicio_remo, videoRemo, "15 Minutos", "Piernas", "funcional", "Remo");
-    Ejercicio ejercicio11 = new Ejercicio(11,"Rodillas Arriba", R.drawable.nivelcinco, 15, R.drawable.ejercicio_flexiones, videoRodillas, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio11 = new Ejercicio(11,"Rodillas Arriba", R.drawable.nivelcinco, 15, R.drawable.ejercicio_rodillas_arriba, videoRodillas, "15 Minutos", "Piernas", "funcional", "Remo");
     Ejercicio ejercicio12 = new Ejercicio(12,"Multi Salto", R.drawable.nivelcinco, 15, R.drawable.ejercicio_pasadas_2, videoSaltos, "15 Minutos", "Piernas", "funcional", "Remo");
 
 
