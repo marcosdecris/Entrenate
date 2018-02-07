@@ -80,7 +80,6 @@ public class AdaptadorGrid extends RecyclerView.Adapter<AdaptadorGrid.MyRecycler
             nombre = itemView.findViewById(R.id.textViewGridNombre);
             zonaTrabaja = itemView.findViewById(R.id.textViewGridZonaTrabaja);
             foto = itemView.findViewById(R.id.imageViewImagenGrid);
-            dificultad = itemView.findViewById(R.id.imageViewGridDificultad);
             layout = itemView.findViewById(R.id.layoutGridAparatos);
         }
 
@@ -89,7 +88,6 @@ public class AdaptadorGrid extends RecyclerView.Adapter<AdaptadorGrid.MyRecycler
             nombre.setText(aparato.getNombre());
             zonaTrabaja.setText(aparato.getZonaQueTrabaja());
             foto.setImageResource(aparato.getFoto());
-            dificultad.setImageResource(aparato.getDificultad());
 //            RequestOptions ro = new RequestOptions().placeholder(R.drawable.loading4).error(R.drawable.errornews);
 //            Glide.with(context).load(unaNoticia.getUrlImagen()).apply(ro).into(imagen);
         }
