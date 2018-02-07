@@ -62,9 +62,9 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
     public void irADetalle(List<Integer> listaEjsCal, List<Integer> listaEjercicios, List<Integer> listaEjsEsti) {
         FragmentDetalleRutina fragmentDetalleRutina = new FragmentDetalleRutina();
         Bundle bundle = new Bundle();
-        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaEjsCal);
+        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaEjsCal);
         bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_RUTINA, (ArrayList<Integer>) listaEjercicios);
-        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaEjsEsti);
+        bundle.putIntegerArrayList(fragmentDetalleRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaEjsEsti);
         fragmentDetalleRutina.setArguments(bundle);
         cargarFragment(fragmentDetalleRutina, CLAVE_DETALLE_RUTINA);
     }
@@ -73,9 +73,9 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
     public void comenzarRutina(List<Integer> listaIdsEjsCal, List<Integer> listaIdsEjsRtna, List<Integer> listaIdsEjsEsti) {
         FragmentEjercicioRutina fragmentEjercicioRutina = new FragmentEjercicioRutina();
         Bundle bundle = new Bundle();
-        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaIdsEjsCal);
+        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaIdsEjsCal);
         bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_RUTINA, (ArrayList<Integer>) listaIdsEjsRtna);
-        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_CALENTAMIENTO, (ArrayList<Integer>) listaIdsEjsEsti);
+        bundle.putIntegerArrayList(fragmentEjercicioRutina.CLAVE_DETALLE_ESTIRAMIENTO, (ArrayList<Integer>) listaIdsEjsEsti);
         fragmentEjercicioRutina.setArguments(bundle);
         cargarFragment(fragmentEjercicioRutina, CLAVE_EJERCICIO_RUTINA);
     }

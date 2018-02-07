@@ -29,6 +29,8 @@ public class DaoEjercicio {
         ejercicioList.add(ejercicio3);
         ejercicioList.add(ejercicio4);
         ejercicioList.add(ejercicio9);
+        ejercicioList.add(ejercicio10);
+        ejercicioList.add(ejercicio12);
         return ejercicioList;
     }
 

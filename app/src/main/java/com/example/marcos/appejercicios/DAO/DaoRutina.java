@@ -16,9 +16,9 @@ public class DaoRutina {
 
 
     //Lista de ID delos ejercicios
-    List<Integer> lista1 = new ArrayList<>(Arrays.asList(7,11, 7, 11));
-    List<Integer> lista2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 9, 8));
-    List<Integer> lista3 = new ArrayList<>(Arrays.asList(5,6,5,6));
+    List<Integer> lista1 = new ArrayList<>(Arrays.asList(7,11));
+    List<Integer> lista2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 9, 8, 10, 12));
+    List<Integer> lista3 = new ArrayList<>(Arrays.asList(5,6));
 
     public ArrayList<Rutina> obtenerRutinas (){
         ArrayList<Rutina> rutinaList = new ArrayList<>();

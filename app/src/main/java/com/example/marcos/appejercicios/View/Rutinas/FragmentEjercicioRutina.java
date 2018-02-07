@@ -69,6 +69,12 @@ public class FragmentEjercicioRutina extends Fragment {
         textViewEjActualRtna = view.findViewById(R.id.textViewTEjACtual);
         textViewEjSiguiente = view.findViewById(R.id.textViewEjProximo);
 
+        //Traigo los ejercicios y los guardo en cada lista
+        cargarListasEjs();
+        //Hago una lista global de ejercicios
+        cargarlistaGlobal();
+
+
         //Busco los botones
         botonEmpezar = view.findViewById(R.id.buttonStart);
         botonSiguiente = view.findViewById(R.id.buttonSiguiente);
@@ -86,10 +92,6 @@ public class FragmentEjercicioRutina extends Fragment {
         botonContinuar.setEnabled(false);
         botonContinuar.setVisibility(view.INVISIBLE);
 
-        //Traigo los ejercicios y los guardo en cada lista
-        cargarListasEjs();
-        //Hago una lista global de ejercicios
-        cargarlistaGlobal();
 
 
 
