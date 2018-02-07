@@ -85,7 +85,7 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         //Elijo que item va a mostrar primero por default
         bottomNavigation.setCurrentItem(0);
         // Set background color
-        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#e9f9e941"));
+        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#494949"));
         //Color del item actual
         bottomNavigation.setAccentColor(Color.parseColor("#ffffff"));
 

@@ -1,5 +1,6 @@
 package com.example.marcos.appejercicios.View.Aparatos;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
@@ -34,6 +35,7 @@ public class ContenedorAparatos extends AppCompatActivity implements AdaptadorGr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedor_aparatos);
+
 
        activarBottomNavigation();
 
@@ -112,9 +114,11 @@ public class ContenedorAparatos extends AppCompatActivity implements AdaptadorGr
 
 
         // Set background color
-        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#e9f9e941"));
+        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#494949"));
         //Color del item actual
         bottomNavigation.setAccentColor(Color.parseColor("#ffffff"));
+
+
 
         // Disable the translation inside the CoordinatorLayout
         bottomNavigation.setBehaviorTranslationEnabled(true);
@@ -145,4 +149,5 @@ public class ContenedorAparatos extends AppCompatActivity implements AdaptadorGr
         });
 
     }
+
 }
