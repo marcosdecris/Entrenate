@@ -18,6 +18,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment" />
 
 
+
     <View
         android:id="@+id/viewPostFragment"
         android:layout_width="match_parent"
