@@ -12,30 +12,95 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:weightSum="10">
 
-        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
 
-    <ImageView
-        android:id="@+id/imageViewMainAparatos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/aparatos_main"
-        android:scaleType="centerCrop"
-        android:elevation="2dp"
-        android:layout_weight="3"
-        />
+            <ImageView
+                android:id="@+id/imageViewMainAparatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/aparatos_main"
+                android:scaleType="centerCrop"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APARATOS"
+                android:shadowColor="@color/colorAccent"
+                android:textSize="35sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:elevation="2dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos los aparatos que podes encontrar en las postas aerobicas.
+Como usarlos, y, ejercicios especificos para cada aparato"
+                android:shadowColor="@color/colorAccent"
+
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:elevation="2dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="12dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
 
 
-    <ImageView
-        android:id="@+id/imageViewMainRutinas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rutinas_main"
-        android:scaleType="centerCrop"
-        android:elevation="2dp"
-        android:layout_marginTop="3dp"
-        android:layout_weight="3"
-        />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/imageViewMainRutinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rutinas_main"
+                android:scaleType="centerCrop"
+                android:elevation="2dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUTINAS"
+                android:textSize="40sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="12dp"
+                android:elevation="2dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rutinas para todos los niveles. Divididas por categorias:
+Musculacion / Aerobico / Funcional."
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"/>
+
+
+        </FrameLayout>
+
 
 
     <LinearLayout
@@ -45,26 +110,85 @@
         android:layout_marginTop="3dp"
         >
 
-        <ImageView
-            android:id="@+id/imageViewMainDondeEntreno"
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/donde_entreno"
-            android:scaleType="centerCrop"
-            android:layout_marginRight="2dp"
-            android:elevation="4dp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1">
 
-        <ImageView
-            android:id="@+id/imageViewMainEjercicios"
+            <ImageView
+                android:id="@+id/imageViewMainDondeEntreno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/donde_entreno_final"
+                android:scaleType="center"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSTAS AEROBICAS"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="12dp"
+                android:elevation="2dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Busca el lugas mas cercano para entrenar"
+                android:textSize="8sp"
+                android:textColor="#000000"
+                android:elevation="2dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginLeft="12dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ejercicios_individuales"
-            android:scaleType="centerCrop"
-            android:elevation="2dp"
-            android:layout_weight="1"
-            />
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageViewMainEjercicios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ejercicios_individuales_final"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+                android:elevation="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EJERCICIOS INDIVIDUALES"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="12dp"
+                android:elevation="2dp"
+                android:textStyle="bold"
+                android:shadowColor="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trabaja musculos especificos"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:elevation="2dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginLeft="12dp"
+                android:shadowColor="@color/colorAccent"/>
+
+        </FrameLayout>
+
+
 
 
     </LinearLayout>
