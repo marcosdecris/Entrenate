@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_main);
+
 
         ImageView aparatos = (ImageView) findViewById(R.id.imageViewMainAparatos);
         ImageView rutinas = (ImageView) findViewById(R.id.imageViewMainRutinas);
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         //Elijo que item va a mostrar primero por default
         bottomNavigation.setCurrentItem(0);
         // Set background color
-        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#e9f9e941"));
+        bottomNavigation.setDefaultBackgroundColor(Color.parseColor("#494949"));
         //Color del item actual
         bottomNavigation.setAccentColor(Color.parseColor("#ffffff"));
 
