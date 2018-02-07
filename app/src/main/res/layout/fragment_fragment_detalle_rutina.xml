@@ -41,7 +41,7 @@
         android:id="@+id/recyclerRutinasExpandable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondo_con_textura"
+        android:background="@drawable/rectangulo_celdas"
         android:elevation="2dp"/>
 
 <FrameLayout

@@ -31,7 +31,7 @@ public class FragmentEjercicio extends Fragment {
         //Encuentro las vistas
         VideoView video = view.findViewById(R.id.videoViewEjercicio);
         TextView nombre = view.findViewById(R.id.textViewNombreEj);
-        TextView repeticiones = view.findViewById(R.id.textViewRepEj);
+        TextView repeticiones = view.findViewById(R.id.cantidadDeRep);
         TextView rutinasAsociadas = view.findViewById(R.id.textViewRutinaEj);
 
         //Obtengo el Ejercicio

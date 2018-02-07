@@ -44,10 +44,10 @@ public class DaoRutina {
 
 
     //Creo las Rutinas
-    Rutina rutina1 = new Rutina("Antilope", R.drawable.niveluno, 15, lista1, lista2, lista3, R.drawable.antilope2, "1 Minuto", R.drawable.aerobico, "Aerobico", "Gluteos", "Descripcion de la rutina" );
-    Rutina rutina2 = new Rutina("Bison", R.drawable.niveldos, 20, lista1, lista2, lista3, R.drawable.bison, "1 Minuto", R.drawable.funcional, "Funcional", "Tronco Inferior", "Descripcion de la rutina" );
-    Rutina rutina3 = new Rutina("Elefante", R.drawable.nivelcuatro, 30, lista1, lista2, lista3, R.drawable.elephant, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps", "Descripcion de la rutina" );
-    Rutina rutina4 = new Rutina("Jaguar", R.drawable.niveltres, 15, lista1, lista2, lista3, R.drawable.jaguar, "1 Minuto", R.drawable.funcional, "Funcional", "Piernas", "Descripcion de la rutina" );
-    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.nivelcinco, 40, lista1, lista2, lista3, R.drawable.rhino, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );
+    Rutina rutina1 = new Rutina("Antilope", R.drawable.dificultad_tres, 15, lista1, lista2, lista3, "1 Minuto", R.drawable.musculacion, "Aerobico", "Gluteos", "Descripcion de la rutina" );
+    Rutina rutina2 = new Rutina("Bison", R.drawable.dificultad_dos, 20, lista1, lista2, lista3, "1 Minuto", R.drawable.musculacion, "Funcional", "Tronco Inferior", "Descripcion de la rutina" );
+    Rutina rutina3 = new Rutina("Elefante", R.drawable.dificultad_uno, 30, lista1, lista2, lista3, "1 Minuto", R.drawable.musculacion, "Musculación", "Biceps, Triceps", "Descripcion de la rutina" );
+    Rutina rutina4 = new Rutina("Jaguar", R.drawable.dificultad_dos, 15, lista1, lista2, lista3, "1 Minuto", R.drawable.musculacion, "Funcional", "Piernas", "Descripcion de la rutina" );
+    Rutina rutina5 = new Rutina("Rinoceronte", R.drawable.dificultad_tres, 40, lista1, lista2, lista3, "1 Minuto", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );
 
 }

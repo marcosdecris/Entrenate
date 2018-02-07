@@ -12,20 +12,18 @@ public class Aparato  {
     private List<Integer> listaEjercicios;
     private String zonaQueTrabaja;
     private String nombre;
-    private Integer dificultad;
+
 
     //Constructor
-    public Aparato(String nombre, Integer dificultad, Integer foto, String zonaQueTrabaja) {
+    public Aparato(String nombre, Integer foto, String zonaQueTrabaja) {
         this.nombre = nombre;
-        this.dificultad = dificultad;
         this.foto = foto;
         this.zonaQueTrabaja = zonaQueTrabaja;
     }
 
     //Constructor
-    public Aparato(String nombre, Integer dificultad, Integer foto, String zonaQueTrabaja, List<Integer> listaEjercicios) {
+    public Aparato(String nombre, Integer foto, String zonaQueTrabaja, List<Integer> listaEjercicios) {
         this.nombre = nombre;
-        this.dificultad = dificultad;
         this.foto = foto;
         this.zonaQueTrabaja = zonaQueTrabaja;
         this.listaEjercicios = listaEjercicios;
@@ -49,7 +47,4 @@ public class Aparato  {
         return nombre;
     }
 
-    public Integer getDificultad() {
-        return dificultad;
-    }
 }

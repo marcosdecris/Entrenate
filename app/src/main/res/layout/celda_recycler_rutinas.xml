@@ -11,13 +11,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/rectangulo_celda_recycler"/>
 
-    <ImageView
-        android:id="@+id/imageViewLogoRutina"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,7 +53,7 @@
                 android:src="@drawable/dificultad_uno"
                 android:layout_gravity="right"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="90dp"/>
+                android:layout_marginRight="16dp"/>
 
         <TextView
             android:id="@+id/textViewCeldaRutinaZonaTrabaja"
@@ -69,7 +62,7 @@
             android:layout_marginTop="25dp"
             android:text="Zona que trabaja"
             android:layout_gravity="right"
-            android:layout_marginRight="90dp"
+            android:layout_marginRight="16dp"
             />
 
         </LinearLayout>

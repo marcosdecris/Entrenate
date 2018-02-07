@@ -139,7 +139,7 @@
                 android:text="00:52"
                 android:textSize="20sp"
                 android:textColor="#ffffff"
-                android:layout_marginLeft="325dp"
+                android:layout_marginLeft="300dp"
                 android:layout_marginRight="8dp"
                 />
 

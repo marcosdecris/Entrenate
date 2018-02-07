@@ -22,14 +22,14 @@ public class Rutina extends Entrenamiento {
 
 
     //Constructores
-    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjercicios, Integer logo, String duracionEstimada) {
+    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjercicios, String duracionEstimada) {
         super(nombre, dificultad, puntos);
         this.listaEjercicios = listaEjercicios;
-        this.logo =  logo;
+
         this.duracionEstimada = duracionEstimada;
     }
 
-    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjsCalentamiento,List<Integer> listaEjercicios, List<Integer> listaEjesEstiramiento, Integer logo, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja, String descipcion) {
+    public Rutina(String nombre, Integer dificultad, Integer puntos, List<Integer> listaEjsCalentamiento,List<Integer> listaEjercicios, List<Integer> listaEjesEstiramiento, String duracionEstimada, Integer fotoTipo, String tipo, String zonaQueTrabaja, String descipcion) {
         super(nombre, dificultad, puntos);
         this.listaEjercicios = listaEjercicios;
         this.listaEjsCalentamiento = listaEjsCalentamiento;
@@ -37,7 +37,6 @@ public class Rutina extends Entrenamiento {
         this.fotoTipo = fotoTipo;
         this.tipo = tipo;
         this.zonaQueTrabaja = zonaQueTrabaja;
-        this.logo = logo;
         this.duracionEstimada = duracionEstimada;
         this.descripcion = descipcion;
     }

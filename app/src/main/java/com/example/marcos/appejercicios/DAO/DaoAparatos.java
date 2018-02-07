@@ -34,11 +34,11 @@ public class DaoAparatos {
 
 
 
-    Aparato aparato1 = new Aparato("Abdominales", R.drawable.niveluno, R.drawable.aparato_abdominales,"Gluteos", lista1 );
-    Aparato aparato2 = new Aparato("Remo", R.drawable.niveldos, R.drawable.aparato_remo,"Brazos", lista2);
-    Aparato aparato3 = new Aparato("Eliptica", R.drawable.nivelcinco, R.drawable.aparato_eliptica,"Piernas", lista1);
-    Aparato aparato4 = new Aparato("Laterales", R.drawable.nivelcuatro, R.drawable.aparato_caderas,"Piernas/Gluteos", lista2);
-    Aparato aparato5 = new Aparato("Multi Salto", R.drawable.niveltres, R.drawable.aparato_pasadas_2,"Tronco superior", lista3);
+    Aparato aparato1 = new Aparato("Abdominales", R.drawable.aparato_abdominales,"Gluteos", lista1 );
+    Aparato aparato2 = new Aparato("Remo", R.drawable.aparato_remo,"Brazos", lista2);
+    Aparato aparato3 = new Aparato("Eliptica", R.drawable.aparato_eliptica,"Piernas", lista1);
+    Aparato aparato4 = new Aparato("Laterales", R.drawable.aparato_caderas,"Piernas/Gluteos", lista2);
+    Aparato aparato5 = new Aparato("Multi Salto",  R.drawable.aparato_pasadas_2,"Tronco superior", lista3);
 
 
 

@@ -74,7 +74,6 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
         private TextView nombre;
         private TextView zonaTrabaja;
         private TextView tiempoEstimado;
-        private ImageView logo;
         private ImageView dificultad;
         private FrameLayout layout;
 
@@ -85,7 +84,6 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
             nombre = itemView.findViewById(R.id.textViewCeldaRutinaNombre);
             zonaTrabaja = itemView.findViewById(R.id.textViewCeldaRutinaZonaTrabaja);
             tiempoEstimado = itemView.findViewById(R.id.textViewCeldaRutinaTiempo);
-            logo = itemView.findViewById(R.id.imageViewLogoRutina);
             dificultad = itemView.findViewById(R.id.imageViewCeldaRutinaDificultad);
             layout = itemView.findViewById(R.id.celdaRutinaLayout);
         }
@@ -94,7 +92,6 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
         public void bindCelda (Rutina rutina){
             nombre.setText(rutina.getNombre());
             zonaTrabaja.setText(rutina.getZonaQueTrabaja());
-            logo.setImageResource(rutina.getLogo());
             dificultad.setImageResource(rutina.getDificultad());
             tiempoEstimado.setText(rutina.getDuracionEstimada());
 //            RequestOptions ro = new RequestOptions().placeholder(R.drawable.loading4).error(R.drawable.errornews);

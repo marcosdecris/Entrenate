@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context="com.example.marcos.appejercicios.View.Ejercicios.FragmentRecyclerEjercicios">
 
 
@@ -16,6 +17,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerEjercicios"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="#000000"/>
 
 </LinearLayout>

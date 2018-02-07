@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -80,8 +81,8 @@ public class FragmentEjercicioRutina extends Fragment {
         botonSiguiente = view.findViewById(R.id.buttonSiguiente);
         botonFinalizar = view.findViewById(R.id.buttonFinalizar);
         cronometro = view.findViewById(R.id.cronometro);
-        final Button botonPausa = view.findViewById(R.id.botonPausa);
-        final Button botonContinuar = view.findViewById(R.id.botonResumir);
+        final ImageButton botonPausa = view.findViewById(R.id.botonPausa);
+        final ImageButton botonContinuar = view.findViewById(R.id.botonResumir);
 
         botonSiguiente.setEnabled(false);
         botonSiguiente.setVisibility(view.GONE);
