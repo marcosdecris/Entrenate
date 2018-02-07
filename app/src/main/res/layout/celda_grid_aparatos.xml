@@ -3,6 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="#00ffffff"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
@@ -18,7 +19,9 @@
        >
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+
+            >
 
         <ImageView
             android:id="@+id/imageViewImagenGrid"
@@ -33,27 +36,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre"
-            android:textSize="20sp"
-            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:textColor="#000000"
             android:layout_below="@id/imageViewImagenGrid"
             />
-
-        <ImageView
-            android:id="@+id/imageViewGridDificultad"
-            android:layout_width="30dp"
-            android:layout_height="14dp"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="5dp"
-            android:scaleType="fitCenter"
-            android:layout_below="@id/imageViewImagenGrid"/>
 
         <TextView
             android:id="@+id/textViewGridZonaTrabaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ZonaTrabaja"
-            android:textSize="15sp"
-            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+           android:layout_marginLeft="8dp"
             android:layout_below="@id/textViewGridNombre"
             />
 

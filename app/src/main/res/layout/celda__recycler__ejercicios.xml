@@ -16,23 +16,25 @@
       app:cardPreventCornerOverlap="false"
       >
 
-
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="@drawable/rectangulo_celdas"/>
 
     <ImageView
         android:id="@+id/imageViewCeldaFoto"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:scaleType="centerCrop"
+        android:elevation="4dp"
         />
-
-
 
         <ImageView
             android:id="@+id/imageViewCeldaDificultad"
             android:layout_width="70dp"
             android:layout_height="20dp"
             android:layout_gravity="right"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="26dp"
             android:layout_marginRight="4dp"
             />
 
@@ -42,8 +44,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre"
+            android:textStyle="bold"
+            android:textAllCaps="true"
             android:textSize="20sp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="8dp"/>
 
 
@@ -51,8 +55,8 @@
             android:id="@+id/textViewCeldaZonaTrabaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="120dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="80dp"
             android:text="Zona que trabaja"
             android:textSize="15sp"/>
 

@@ -1,42 +1,168 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+       android:background="@drawable/fondo_con_textura"
     tools:context="com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangulo_gradiente"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
 
    <VideoView
        android:id="@+id/videoViewEjercicio"
-       android:layout_width="300dp"
+       android:layout_width="match_parent"
        android:layout_height="200dp"
-       android:layout_gravity="center"/>
+       android:layout_gravity="center"
+       android:layout_margin="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_marginTop="8dp"/>
+
 
     <TextView
         android:id="@+id/textViewNombreEj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre"
-        android:textSize="30dp"
-        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"/>
-    <TextView
-        android:id="@+id/textViewRepEj"
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_marginTop="8dp"/>
+
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Repeticiones"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
-    <TextView
-        android:id="@+id/textViewRutinaEj"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewRepEj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repeticiones"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/cantidadDeRep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="15"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="350dp"
+            android:layout_marginRight="8dp"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rutina donde encontrarlo"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewEquiposEj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equipamiento"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/equiposNecesarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="350dp"
+            android:layout_marginRight="8dp"
+            />
 
 
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"
+        android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewMejorTiempo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mejor tiempo"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textoUltimoMejor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="00:52"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="325dp"
+                android:layout_marginRight="8dp"
+                />
 
 
-</LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c2c2c2"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewRutinaEj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rutina donde encontrarlo"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
