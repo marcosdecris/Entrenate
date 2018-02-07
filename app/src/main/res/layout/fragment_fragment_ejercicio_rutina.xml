@@ -8,38 +8,69 @@
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="200dp">
+
+
     <VideoView
         android:id="@+id/videoViewRtna"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
         />
-    <Button
+
+    <ImageButton
         android:id="@+id/botonPausa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="Pausa"/>
-    <Button
+        android:layout_margin="16dp"
+        android:background="#00000000"
+        android:src="@drawable/cast_ic_expanded_controller_pause"
+        />
+
+
+    <ImageButton
         android:id="@+id/botonResumir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="Continuar"/>
+        android:layout_margin="16dp"
+        android:background="#00000000"
+        android:src="@drawable/cast_ic_expanded_controller_play"/>
+
+
     <TextView
         android:id="@+id/textViewTEjACtual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:hint="aaaaaa"
-        android:layout_marginBottom="4dp"/>
+        android:layout_gravity="bottom|left"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:text="Ejercicio Actual"
+        />
+
+    <TextView
+        android:id="@+id/textViewRepesACtual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="32dp"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:text="16"
+        />
+
 </FrameLayout>
+
+
 
     <LinearLayout
         android:id="@+id/layoutBotonRutina"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#494949">
 
         <Chronometer
             android:id="@+id/cronometro"
@@ -47,42 +78,97 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="00:00"
-            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="50sp"
             android:layout_marginTop="8dp"/>
 
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff"
+            android:layout_marginTop="8dp"/>
+
+
     <TextView
-        android:id="@+id/textViewEjProximo"
+        android:id="@+id/textViewEjTituloProximo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:hint="Nombre Ejercicio"
-        android:layout_marginLeft="4dp"
-        android:gravity="center"
+        android:text="Siguiente Ejercicio:"
+        android:textColor="#ffffff"
+        android:layout_margin="8dp"
         android:layout_marginTop="10dp"/>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewEjProximo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Burpees"
+                android:textColor="#ffffff"
+                android:layout_margin="8dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewEjProximoRepes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp"
+                android:text="20"
+                android:textColor="#ffffff"
+
+                />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp">
 
             <Button
                 android:id="@+id/buttonStart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Empezar"
-                android:textSize="30dp"/>
+                android:shadowColor="#b1b1b1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:background="@drawable/rectangulo_gradiente_rutina_empezar"
+                />
+
             <Button
                 android:id="@+id/buttonSiguiente"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Siguiente"
-                android:textSize="30dp"/>
+                android:shadowColor="#b1b1b1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
+
             <Button
                 android:id="@+id/buttonFinalizar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Finalizar"
-                android:textSize="30dp"/>
-
+                android:shadowColor="#b1b1b1"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
 
         </FrameLayout>
 

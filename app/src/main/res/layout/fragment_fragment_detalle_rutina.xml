@@ -5,12 +5,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
 
     <ImageView
         android:id="@+id/imagenPreviaDetalleRutina"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@drawable/rutinas_main"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangulo_celda_recycler"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#494949"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Rutina ideal para poder dejar atras los prejuicios de usar maya entera o bikini, vas a ser la envidia del verano, y probablemente si tenes un pocode magia al hablar, tengas relaciones carnales mas de una vez por semana(No inlcuye a personas casadas el promedio)."/>
+
+</FrameLayout>
 
 <FrameLayout
     android:layout_width="match_parent"
@@ -21,19 +41,33 @@
         android:id="@+id/recyclerRutinasExpandable"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/fondo_con_textura"
         android:elevation="2dp"/>
 
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="bottom|center"
+    android:elevation="2dp">
 
     <Button
         android:id="@+id/btnEmpezar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_gravity="bottom|center"
         android:elevation="4dp"
         android:text="EMPEZAR"
         android:textSize="30sp"
         android:textColor="#ffffff"
-        android:background="#0059ff"
+        android:background="#494949"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:background="@drawable/rectangulo_gradiente"/>
+
 </FrameLayout>
+</FrameLayout>
+
 </LinearLayout>
