@@ -45,6 +45,12 @@
             android:elevation="2dp"/>
 
         <FrameLayout
+            android:id="@+id/contenedorVideoRuti"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"/>
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="bottom|center"

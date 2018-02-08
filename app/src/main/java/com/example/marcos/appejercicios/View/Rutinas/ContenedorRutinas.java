@@ -1,5 +1,6 @@
 package com.example.marcos.appejercicios.View.Rutinas;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.Fragment;
@@ -14,6 +15,7 @@ import com.example.marcos.appejercicios.MainActivity;
 import com.example.marcos.appejercicios.Model.Ejercicio;
 import com.example.marcos.appejercicios.Model.Rutina;
 import com.example.marcos.appejercicios.R;
+import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorExpandableRecycler;
 import com.example.marcos.appejercicios.View.Adaptadores.AdaptadorRecycRutinas;
 import com.example.marcos.appejercicios.View.Aparatos.FragmentEjercicio;
 import com.example.marcos.appejercicios.View.BottomNavigation.Actividades;
@@ -25,7 +27,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRecycRutinas.ComunicadorRutinas, FragmentDetalleRutina.EmpezarRtna{
+public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRecycRutinas.ComunicadorRutinas, FragmentDetalleRutina.EmpezarRtna, AdaptadorExpandableRecycler.ComunicadorVideo, FragmentDetalleVideo.InterfaceBoton{
     //Tags
     private static final String CLAVE_VIEWPAGER_RUTINAS = "Viewpager rutinas";
     private static final String CLAVE_DETALLE_RUTINA = "Detalle rutina";
@@ -137,6 +139,32 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
         });
 
     }
-    //Metodo para comenzar la rutina
 
+    @Override
+    public void abrirVideo(String video) {
+        FragmentDetalleVideo fragmentDetalleVideo = new FragmentDetalleVideo();
+        Bundle bundle = new Bundle();
+        bundle.putString(FragmentDetalleVideo.CLAVE_VIDEO, video);
+        fragmentDetalleVideo.setArguments(bundle);
+        FragmentManager manager = getSupportFragmentManager();
+//        Fragment fragmentContenedor = manager.findFragmentById(R.id.contenedorRutinas);
+//        if(fragmentContenedor == null || fragmentContenedor.getTag() != tag){
+            FragmentTransaction transaction = manager.beginTransaction();
+            transaction.replace(R.id.contenedorVideoRuti, fragmentDetalleVideo);
+//            if(fragmentContenedor != null){
+//                transaction.addToBackStack(null);
+//            }
+            transaction.commit();
+
+    }
+
+
+    @Override
+    public void volverDelVideo() {
+        FragmentManager manager = getSupportFragmentManager();
+        Fragment fragmentContenedor = manager.findFragmentById(R.id.contenedorVideoRuti);
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.remove(fragmentContenedor);
+        transaction.commit();
+    }
 }

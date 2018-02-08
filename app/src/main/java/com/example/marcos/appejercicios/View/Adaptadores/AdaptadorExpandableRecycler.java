@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.bignerdranch.expandablerecyclerview.Adapter.ExpandableRecyclerAdapter;
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
@@ -22,13 +23,15 @@ import java.util.List;
 
 public class AdaptadorExpandableRecycler extends ExpandableRecyclerAdapter<ViewHolderPadre,ViewHolderHijo> {
 
-    LayoutInflater inflador;
-
+    private LayoutInflater inflador;
+    private RelativeLayout layoutHijo;
+    private ComunicadorVideo comunicadorVideo;
 
     //Constructor
     public AdaptadorExpandableRecycler(Context context, List<ParentObject> parentItemList) {
         super(context, parentItemList);
         inflador = LayoutInflater.from(context);
+        comunicadorVideo = (ComunicadorVideo) context;
     }
 
 
@@ -43,8 +46,8 @@ public class AdaptadorExpandableRecycler extends ExpandableRecyclerAdapter<ViewH
 
     @Override
     public ViewHolderHijo onCreateChildViewHolder(ViewGroup viewGroup) {
-
         View view = inflador.inflate(R.layout.celda_lista_hijo,viewGroup,false);
+        layoutHijo = view.findViewById(R.id.layoutCeldaHijo);
         return new ViewHolderHijo(view);
     }
 
@@ -58,9 +61,18 @@ public class AdaptadorExpandableRecycler extends ExpandableRecyclerAdapter<ViewH
 
     @Override
     public void onBindChildViewHolder(ViewHolderHijo viewHolderHijo, int i, Object o) {
-
-        Ejercicio ejercicio = (Ejercicio) o;
+        final Ejercicio ejercicio = (Ejercicio) o;
         viewHolderHijo.textViewNombre.setText(ejercicio.getNombre());
         viewHolderHijo.imageViewVideo.setImageResource(ejercicio.getFoto());
+        layoutHijo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                comunicadorVideo.abrirVideo(ejercicio.getVideo());
+            }
+        });
+    }
+
+    public interface ComunicadorVideo{
+        public void abrirVideo(String video);
     }
 }
