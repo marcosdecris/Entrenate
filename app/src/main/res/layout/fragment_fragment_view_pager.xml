@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         app:tabGravity="fill"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/rectangulo_view_pager"
         app:tabTextColor="@color/colorAccent"
         app:tabSelectedTextColor="#ff8484"
         app:tabIndicatorHeight="4dp"
