@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
+    android:elevation="4dp"
     android:id="@+id/celdaLayout">
 
 
-  <android.support.v7.widget.CardView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      app:cardUseCompatPadding="true"
-      app:cardBackgroundColor="#edecec"
-      app:cardElevation="4dp"
-      app:cardPreventCornerOverlap="false"
-      >
 
       <View
           android:layout_width="match_parent"
           android:layout_height="70dp"
+
           android:background="@drawable/rectangulo_celdas"/>
 
     <ImageView
@@ -32,9 +26,8 @@
         <ImageView
             android:id="@+id/imageViewCeldaDificultad"
             android:layout_width="70dp"
-            android:layout_height="20dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="26dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
             android:layout_marginRight="4dp"
             />
 
@@ -55,13 +48,13 @@
             android:id="@+id/textViewCeldaZonaTrabaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="34dp"
+            android:layout_marginTop="38dp"
             android:layout_marginLeft="80dp"
             android:text="Zona que trabaja"
             android:textSize="15sp"/>
 
 
-  </android.support.v7.widget.CardView>
 
 
-</LinearLayout>
+
+</FrameLayout>

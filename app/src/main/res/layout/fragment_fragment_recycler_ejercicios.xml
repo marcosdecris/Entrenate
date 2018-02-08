@@ -18,6 +18,6 @@
         android:id="@+id/recyclerEjercicios"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"/>
+        android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
 
 </LinearLayout>
