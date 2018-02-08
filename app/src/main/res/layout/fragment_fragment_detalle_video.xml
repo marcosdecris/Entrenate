@@ -10,17 +10,19 @@
     android:id="@+id/videoDetalleRutina"
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:layout_marginTop="100dp"
+    android:layout_marginTop="20dp"
     android:layout_gravity="center"
     />
 
     <Button
         android:id="@+id/buttonVolverVideo"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="20dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
         android:text="Volver"
-        android:textSize="40dp"/>
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
 
 
 
