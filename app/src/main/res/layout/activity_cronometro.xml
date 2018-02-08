@@ -7,17 +7,49 @@
     tools:context="com.example.marcos.appejercicios.View.BottomNavigation.Cronometro"
     >
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/rectangulo_view_pager">
 
 
-            <TextView
+            <ProgressBar
+                android:id="@+id/idProgressBar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Cronometro"/>
-    </LinearLayout>
+                android:layout_height="wrap_content"
+                />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|left"
+            android:text="COMENZAR"
+            android:textSize="25sp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/rectangulo_celdas"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="PAUSA"
+            android:textSize="25sp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/rectangulo_celdas"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text="REINICIAR"
+            android:textSize="25sp"
+            android:layout_marginTop="94dp"
+            android:background="@drawable/rectangulo_celdas"/>
+
+
+    </FrameLayout>
 
     <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
         android:id="@+id/bottom_navigation_cronometro"
