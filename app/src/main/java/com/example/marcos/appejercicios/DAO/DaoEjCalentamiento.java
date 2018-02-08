@@ -43,8 +43,8 @@ public class DaoEjCalentamiento {
 
 
     //Hardcore
-    Ejercicio ejercicio7 = new Ejercicio(7,"Jumping Jacks", R.drawable.dificultad_tres, 15, R.drawable.ejercicios_jumping_jacks, videoJumping, "15 Minutos", "Piernas", "funcional", "Remo");
-    Ejercicio ejercicio11 = new Ejercicio(11,"Rodillas Arriba", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_rodillas_arriba, videoRodillas, "15 Minutos", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio7 = new Ejercicio(7,"Jumping Jacks", R.drawable.dificultad_tres, 15, R.drawable.ejercicios_jumping_jacks, videoJumping, "x12", "Piernas", "funcional", "Remo");
+    Ejercicio ejercicio11 = new Ejercicio(11,"Rodillas Arriba", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_rodillas_arriba, videoRodillas, "x12", "Piernas", "funcional", "Remo");
 
 
 

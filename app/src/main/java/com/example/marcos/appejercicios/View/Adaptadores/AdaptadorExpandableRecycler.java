@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.bignerdranch.expandablerecyclerview.Adapter.ExpandableRecyclerAdapter;
@@ -24,7 +25,7 @@ import java.util.List;
 public class AdaptadorExpandableRecycler extends ExpandableRecyclerAdapter<ViewHolderPadre,ViewHolderHijo> {
 
     private LayoutInflater inflador;
-    private RelativeLayout layoutHijo;
+    private FrameLayout layoutHijo;
     private ComunicadorVideo comunicadorVideo;
 
     //Constructor

@@ -91,9 +91,9 @@ public class AdaptadorRecycRutinas extends RecyclerView.Adapter<AdaptadorRecycRu
         //Metodos viewholder
         public void bindCelda (Rutina rutina){
             nombre.setText(rutina.getNombre());
-            zonaTrabaja.setText(rutina.getZonaQueTrabaja());
+            zonaTrabaja.setText("Zona que trabaja: " + rutina.getZonaQueTrabaja());
             dificultad.setImageResource(rutina.getDificultad());
-            tiempoEstimado.setText(rutina.getDuracionEstimada());
+            tiempoEstimado.setText("Duración: " + rutina.getDuracionEstimada());
 //            RequestOptions ro = new RequestOptions().placeholder(R.drawable.loading4).error(R.drawable.errornews);
 //            Glide.with(context).load(unaNoticia.getUrlImagen()).apply(ro).into(imagen);
         }

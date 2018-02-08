@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
@@ -46,10 +47,14 @@ public class FragmentEjercicioRutina extends Fragment {
     VideoView videoView;
     TextView textViewEjActualRtna;
     TextView textViewEjSiguiente;
+    TextView textViewRepeActual;
+    TextView textViewEjTituloProximo;
+    TextView textViewRepeSiguiente;
     Chronometer cronometro;
     Button botonEmpezar;
     Button botonSiguiente;
     Button botonFinalizar;
+    ImageView imagenPreview;
 
 
 
@@ -69,6 +74,12 @@ public class FragmentEjercicioRutina extends Fragment {
         videoView = view.findViewById(R.id.videoViewRtna);
         textViewEjActualRtna = view.findViewById(R.id.textViewTEjACtual);
         textViewEjSiguiente = view.findViewById(R.id.textViewEjProximo);
+        textViewRepeActual = view.findViewById(R.id.textViewRepesACtual);
+        textViewRepeSiguiente = view.findViewById(R.id.textViewEjRepeSiguiente);
+        imagenPreview = view.findViewById(R.id.imageViewPreviewVideo);
+        imagenPreview.setImageResource(R.drawable.cast_ic_expanded_controller_play);
+        textViewEjTituloProximo = view.findViewById(R.id.textViewEjTituloProximo);
+
 
         //Traigo los ejercicios y los guardo en cada lista
         cargarListasEjs();
@@ -110,6 +121,8 @@ public class FragmentEjercicioRutina extends Fragment {
                 botonEmpezar.setVisibility(v.GONE);
                 botonSiguiente.setEnabled(true);
                 botonSiguiente.setVisibility(v.VISIBLE);
+                imagenPreview.setVisibility(v.GONE);
+                textViewEjTituloProximo.setText("Siguiente ejercicio:");
             }
         });
 
@@ -207,6 +220,7 @@ public class FragmentEjercicioRutina extends Fragment {
         }else{
              siguienteEjercicio = listaEjsGlobal.get(posicion + 1);
             textViewEjSiguiente.setText(siguienteEjercicio.getNombre());
+            textViewRepeSiguiente.setText(siguienteEjercicio.getRepeticiones());
         }
 
 
@@ -216,6 +230,7 @@ public class FragmentEjercicioRutina extends Fragment {
         videoView.setVideoURI(uri1);
         videoView.requestFocus();
         videoView.start();
+        textViewRepeActual.setText(ejercicioActual.getRepeticiones());
 
 
     }
