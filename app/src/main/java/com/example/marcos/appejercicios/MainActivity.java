@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo_entrenate);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_main);
 
 
@@ -35,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         ImageView dondeEntreno = (ImageView) findViewById(R.id.imageViewMainDondeEntreno);
 
         activarBottomNavigation();
-
 
         //Listeners para las views
         aparatos.setOnClickListener(new View.OnClickListener() {

@@ -15,9 +15,9 @@
         app:tabGravity="fill"
         android:background="@drawable/rectangulo_view_pager"
         app:tabTextColor="@color/colorAccent"
-        app:tabSelectedTextColor="#ff8484"
+        app:tabSelectedTextColor="#ffffff"
         app:tabIndicatorHeight="4dp"
-        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorColor="#fff"
 
         />
     <android.support.v4.view.ViewPager
