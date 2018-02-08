@@ -3,12 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:backgroundTint="#494949"
+    android:background="@drawable/rectangulo_gradiente_rutina_empezar"
     tools:context="com.example.marcos.appejercicios.View.DondeEntreno.FragmentRecyclerLugares">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerDndeEntreno"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
+       />
 
 </LinearLayout>

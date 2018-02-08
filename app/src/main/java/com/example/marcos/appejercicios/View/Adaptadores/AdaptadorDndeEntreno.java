@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -64,7 +65,7 @@ public class AdaptadorDndeEntreno extends RecyclerView.Adapter<AdaptadorDndeEntr
     public class MyRecyclerViewHolder extends RecyclerView.ViewHolder {
         //Atts viewholder
         private TextView nombre;
-        private LinearLayout layout;
+        private FrameLayout layout;
 
 
         //Constructror viewholder

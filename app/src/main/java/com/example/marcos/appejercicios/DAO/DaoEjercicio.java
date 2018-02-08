@@ -28,6 +28,10 @@ public class DaoEjercicio {
         ejercicioList.add(ejercicio2);
         ejercicioList.add(ejercicio3);
         ejercicioList.add(ejercicio4);
+        ejercicioList.add(ejercicio5);
+        ejercicioList.add(ejercicio6);
+        ejercicioList.add(ejercicio7);
+        ejercicioList.add(ejercicio8);
         ejercicioList.add(ejercicio9);
         ejercicioList.add(ejercicio10);
         ejercicioList.add(ejercicio12);

@@ -1,6 +1,8 @@
 package com.example.marcos.appejercicios.View.Ejercicios;
 
 
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
