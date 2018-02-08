@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         app:tabGravity="fill"
         android:layout_gravity="center_horizontal"
-        android:background="@color/colorAccent"
-        app:tabTextColor="@color/colorPrimary"
-        app:tabSelectedTextColor="@color/colorPrimaryDark"
+        android:background="@color/colorPrimary"
+        app:tabTextColor="@color/colorAccent"
+        app:tabSelectedTextColor="#ff8484"
         app:tabIndicatorHeight="4dp"
-        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorAccent"
         />
 
     <android.support.v4.view.ViewPager
