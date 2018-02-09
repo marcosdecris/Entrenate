@@ -15,19 +15,19 @@
             android:id="@+id/imagenPreviaDetalleRutina"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/rutinas_main"
+            android:background="@drawable/rectangulo_gradiente"
             />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/rectangulo_celda_recycler"/>
+            android:background="@drawable/fondo_con_textura"/>
 
         <TextView
             android:id="@+id/textViewNombreRutina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#494949"
+            android:textColor="#fff"
             android:textSize="35sp"
             android:textAllCaps="true"
             android:textStyle="bold"
@@ -40,7 +40,7 @@
             android:id="@+id/textViewDescripcionRutina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#494949"
+            android:textColor="#fff"
             android:textSize="25sp"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"

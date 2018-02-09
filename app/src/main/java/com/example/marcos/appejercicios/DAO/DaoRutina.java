@@ -59,7 +59,7 @@ public class DaoRutina {
 
     //Creo las Rutinas
     Rutina rutina1 = new Rutina("Rutina I", R.drawable.dificultad_tres, 15, lista1, lista2, lista3, "30 Minutos", R.drawable.aerobico, "Aerobico", "Gluteos", "Descripcion de la rutina" );
-    Rutina rutina2 = new Rutina("Rutina II", R.drawable.dificultad_dos, 20, lista1, lista2, lista3, "15 Minutos", R.drawable.funcional , "Funcional", "Triceps", "Descripcion de la rutina" );
+    Rutina rutina2 = new Rutina("Rutina II", R.drawable.dificultad_dos, 20, lista1, lista2, lista3, "15 Minutos", R.drawable.funcional, "Funcional", "Triceps", "Descripcion de la rutina" );
     Rutina rutina3 = new Rutina("Rutina III", R.drawable.dificultad_uno, 30, lista1, lista2, lista3, "45 Minutos", R.drawable.musculacion, "Musculación", "Biceps", "Descripcion de la rutina" );
     Rutina rutina4 = new Rutina("Rutina IV", R.drawable.dificultad_dos, 15, lista1, lista2, lista3, "30 Minutos", R.drawable.funcional, "Funcional", "Piernas", "Descripcion de la rutina" );
     Rutina rutina5 = new Rutina("Rutina V", R.drawable.dificultad_tres, 40, lista1, lista2, lista3, "45 Minutos", R.drawable.musculacion, "Musculación", "Cuadriceps", "Descripcion de la rutina" );

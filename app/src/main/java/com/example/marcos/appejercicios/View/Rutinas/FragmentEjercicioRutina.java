@@ -59,6 +59,7 @@ public class FragmentEjercicioRutina extends Fragment {
 
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -106,6 +107,26 @@ public class FragmentEjercicioRutina extends Fragment {
 
 
 
+        //Metodo Igual que en boton Empezar pero en el video
+        videoView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cronometro.setBase(SystemClock.elapsedRealtime());
+                cronometro.start();
+                botonPausa.setVisibility(view.VISIBLE);
+                botonPausa.setEnabled(true);
+                cargarEjercicio();
+                botonEmpezar.setEnabled(false);
+                botonEmpezar.setVisibility(v.GONE);
+                botonSiguiente.setEnabled(true);
+                botonSiguiente.setVisibility(v.VISIBLE);
+                imagenPreview.setVisibility(v.GONE);
+                textViewEjTituloProximo.setText("Siguiente ejercicio:");
+                videoView.setEnabled(false);
+            }
+        });
+
+
 
 
         //Metodo para el boton empezar
@@ -123,6 +144,7 @@ public class FragmentEjercicioRutina extends Fragment {
                 botonSiguiente.setVisibility(v.VISIBLE);
                 imagenPreview.setVisibility(v.GONE);
                 textViewEjTituloProximo.setText("Siguiente ejercicio:");
+
             }
         });
 

@@ -8,7 +8,7 @@
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="#494949">
+    android:background="#000000">
 
 
     <VideoView
@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_gravity="center"
+
         />
 
     <ImageView
@@ -45,31 +46,7 @@
         android:background="#00000000"
         android:src="@drawable/cast_ic_expanded_controller_play"/>
 
-
-    <TextView
-        android:id="@+id/textViewTEjACtual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|left"
-        android:layout_margin="8dp"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-        />
-
-    <TextView
-        android:id="@+id/textViewRepesACtual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_marginBottom="8dp"
-        android:layout_marginRight="32dp"
-        android:textColor="#ffffff"
-        android:textSize="30sp"
-
-        />
-
 </FrameLayout>
-
 
 
     <LinearLayout
@@ -78,6 +55,42 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="#494949">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+            android:id="@+id/textViewTEjACtual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp"
+            android:hint="ejActual"
+            />
+
+            <TextView
+                android:id="@+id/textViewRepesACtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:hint="repes"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="8dp"/>
 
         <Chronometer
             android:id="@+id/cronometro"
@@ -105,7 +118,8 @@
         android:textSize="20sp"
         android:textColor="#ffffff"
         android:layout_margin="8dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+       />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -118,7 +132,9 @@
                 android:textSize="20sp"
                 android:textColor="#ffffff"
                 android:layout_margin="8dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:hint="EjSiguiente"
+                />
 
             <TextView
                 android:id="@+id/textViewEjRepeSiguiente"
@@ -128,7 +144,7 @@
                 android:layout_gravity="center|right"
                 android:layout_marginRight="32dp"
                 android:textColor="#ffffff"
-
+                android:hint="Repe"
                 />
 
         </FrameLayout>
@@ -138,7 +154,8 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="4dp">
+            android:elevation="4dp"
+            android:layout_marginBottom="20dp">
 
             <Button
                 android:id="@+id/buttonStart"
