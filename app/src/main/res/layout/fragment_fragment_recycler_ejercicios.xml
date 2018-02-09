@@ -11,7 +11,8 @@
         android:id="@+id/imageViewTipoEjercicio"
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:scaleType="fitXY"/>
+        android:scaleType="centerCrop"
+        />
 
 
     <android.support.v7.widget.RecyclerView

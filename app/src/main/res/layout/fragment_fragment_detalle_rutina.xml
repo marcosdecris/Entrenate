@@ -22,13 +22,29 @@
         android:background="@drawable/rectangulo_celda_recycler"/>
 
     <TextView
+        android:id="@+id/textViewNombreRutina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#494949"
-        android:textSize="12sp"
-        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="Rutina I"
+        />
+
+    <TextView
+        android:id="@+id/textViewDescripcionRutina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#494949"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
         android:textAlignment="center"
-        android:text="Rutina ideal para poder dejar atras los prejuicios de usar maya entera o bikini, vas a ser la envidia del verano, y probablemente si tenes un pocode magia al hablar, tengas relaciones carnales mas de una vez por semana(No inlcuye a personas casadas el promedio)."/>
+        android:layout_marginTop="50dp"
+        android:text="Descripciòn"
+        />
 
 </FrameLayout>
 

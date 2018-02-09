@@ -2,8 +2,13 @@ package com.example.marcos.appejercicios.View.BottomNavigation;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Chronometer;
+import android.widget.ImageButton;
 
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
@@ -12,10 +17,73 @@ import com.example.marcos.appejercicios.R;
 
 public class Cronometro extends AppCompatActivity {
 
+
+    private  ImageButton botonStart;
+    private  ImageButton botonPausa;
+    private  Button botonReiniciar;
+    private Chronometer cronometroActividad;
+    private Long lastPause;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cronometro);
+
+        botonStart = (ImageButton) findViewById(R.id.cronometroStart);
+        botonPausa = (ImageButton) findViewById(R.id.cronometroPause);
+        botonReiniciar = (Button) findViewById(R.id.cronometroReiniciar);
+        cronometroActividad = (Chronometer) findViewById(R.id.cronometroActivity);
+
+        botonStart.setEnabled(true);
+        botonStart.setVisibility(View.VISIBLE);
+        botonPausa.setEnabled(false);
+        botonPausa.setVisibility(View.INVISIBLE);
+
+
+        botonStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(lastPause !=0){
+
+                    cronometroActividad.setBase(cronometroActividad.getBase() + SystemClock.elapsedRealtime() - lastPause);
+                } else{
+                    cronometroActividad.setBase(SystemClock.elapsedRealtime());
+                }
+                cronometroActividad.start();
+                botonStart.setEnabled(false);
+                botonStart.setVisibility(v.INVISIBLE);
+                botonPausa.setEnabled(true);
+                botonPausa.setVisibility(v.VISIBLE);
+            }
+        });
+
+
+        botonPausa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lastPause = SystemClock.elapsedRealtime();
+                cronometroActividad.stop();
+                botonPausa.setEnabled(false);
+                botonPausa.setVisibility(v.INVISIBLE);
+                botonStart.setEnabled(true);
+                botonStart.setVisibility(v.VISIBLE);
+            }
+        });
+
+        botonReiniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cronometroActividad.stop();
+                cronometroActividad.setBase(SystemClock.elapsedRealtime());
+                lastPause = Long.valueOf(0);
+                botonStart.setEnabled(true);
+                botonStart.setVisibility(v.VISIBLE);
+                botonPausa.setEnabled(false);
+                botonPausa.setVisibility(v.INVISIBLE);
+
+            }
+        });
+
 
         activarBottomNavigation();
     }
