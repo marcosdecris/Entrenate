@@ -108,7 +108,7 @@ public class FragmentEjercicioRutina extends Fragment {
 
 
         //Metodo Igual que en boton Empezar pero en el video
-        videoView.setOnClickListener(new View.OnClickListener() {
+        imagenPreview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cronometro.setBase(SystemClock.elapsedRealtime());
