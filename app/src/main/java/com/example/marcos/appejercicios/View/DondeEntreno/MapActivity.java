@@ -58,6 +58,13 @@ public class MapActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //Logo en APPBAR
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo_appbar);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+
         setContentView(R.layout.activity_map);
 
         Intent intent = getIntent();
