@@ -10,15 +10,13 @@
     android:id="@+id/videoDetalleRutina"
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:layout_marginTop="20dp"
     android:layout_gravity="center"
     />
 
     <Button
         android:id="@+id/buttonVolverVideo"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
         android:text="Volver"
         android:textSize="30sp"
         android:textColor="#fff"
