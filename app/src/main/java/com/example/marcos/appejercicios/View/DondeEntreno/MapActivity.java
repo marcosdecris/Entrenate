@@ -63,8 +63,7 @@ public class MapActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.logo_appbar);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         setContentView(R.layout.activity_map);
 
         Intent intent = getIntent();

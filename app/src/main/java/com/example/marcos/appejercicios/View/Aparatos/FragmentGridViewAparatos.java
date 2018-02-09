@@ -48,7 +48,7 @@ public class FragmentGridViewAparatos extends Fragment {
         recyclerView.setAdapter(adaptadorGrid);
         StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(staggeredGridLayoutManager);
-        SpacesItemDecoration decoration = new SpacesItemDecoration(16);
+        SpacesItemDecoration decoration = new SpacesItemDecoration(12);
         recyclerView.addItemDecoration(decoration);
 
         return view;

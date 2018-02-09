@@ -32,7 +32,7 @@ public class ContenedorEjercicios extends AppCompatActivity implements Adaptador
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.logo_appbar);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         setContentView(R.layout.activity_contenedor_ejercicio);
 

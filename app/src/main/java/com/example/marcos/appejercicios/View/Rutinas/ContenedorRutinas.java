@@ -40,8 +40,7 @@ public class ContenedorRutinas extends AppCompatActivity implements AdaptadorRec
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.logo_appbar);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         setContentView(R.layout.activity_contenedor_rutinas);
 
         activarBottomNavigation();
