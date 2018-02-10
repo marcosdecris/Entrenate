@@ -52,9 +52,10 @@
         android:layout_marginTop="8dp"/>
 
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/textViewRepEj"
@@ -64,22 +65,21 @@
             android:textSize="20dp"
             android:textColor="#ffffff"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_gravity="center_vertical"/>
 
         <TextView
             android:id="@+id/cantidadDeRep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="15"
-            android:textSize="20sp"
+            android:text="x15"
+            android:layout_gravity="center|right"
+            android:textSize="15sp"
             android:textColor="#ffffff"
-            android:layout_marginLeft="350dp"
             android:layout_marginRight="8dp"
             />
 
 
-    </RelativeLayout>
+    </FrameLayout>
 
     <View
         android:layout_width="match_parent"
@@ -89,9 +89,10 @@
         android:background="@color/colorPrimary"
         android:layout_marginTop="8dp"/>
 
-        <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/textViewEquiposEj"
@@ -101,21 +102,21 @@
             android:textSize="20dp"
             android:textColor="#ffffff"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_gravity="center_vertical"/>
 
         <TextView
             android:id="@+id/equiposNecesarios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:textColor="#ffffff"
-            android:layout_marginLeft="350dp"
+            android:text="Mancuernas"
+            android:layout_gravity="center|right"
             android:layout_marginRight="8dp"
             />
 
 
-    </RelativeLayout>
+    </FrameLayout>
 
     <View
         android:layout_width="match_parent"
@@ -125,9 +126,10 @@
         android:background="@color/colorPrimary"
         android:layout_marginTop="8dp"/>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/textViewMejorTiempo"
@@ -136,23 +138,23 @@
                 android:text="Mejor tiempo"
                 android:textSize="20dp"
                 android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"/>
+                />
 
             <TextView
                 android:id="@+id/textoUltimoMejor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:text="00:52"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textColor="#ffffff"
-                android:layout_marginLeft="350dp"
+                android:layout_gravity="center|right"
                 android:layout_marginRight="8dp"
                 />
 
 
-        </RelativeLayout>
+        </FrameLayout>
 
         <View
             android:layout_width="match_parent"
