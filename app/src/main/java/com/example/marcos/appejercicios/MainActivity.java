@@ -1,5 +1,7 @@
 package com.example.marcos.appejercicios;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
@@ -7,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -24,18 +27,18 @@ import com.example.marcos.appejercicios.View.Rutinas.ContenedorRutinas;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
-//        //Logo en APPBAR
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-//        getSupportActionBar().setLogo(R.drawable.logo_appbar);
-//        getSupportActionBar().setDisplayUseLogoEnabled(true);
-//        getSupportActionBar().setDisplayShowTitleEnabled(false);
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_logo);
+       //Logo en APPBAR
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setCustomView(R.layout.custom_logo);
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangulo_view_pager));
+
 
         setContentView(R.layout.activity_main);
 

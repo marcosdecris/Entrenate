@@ -61,13 +61,10 @@ public class MapActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         //Logo en APPBAR
-//        getSupportActionBar().setDisplayShowHomeEnabled(true);
-//        getSupportActionBar().setLogo(R.drawable.logo_appbar);
-//        getSupportActionBar().setDisplayUseLogoEnabled(true);
-//        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.custom_logo);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        actionBar.setCustomView(R.layout.custom_logo);
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangulo_view_pager));
         setContentView(R.layout.activity_map);
 
         Intent intent = getIntent();
