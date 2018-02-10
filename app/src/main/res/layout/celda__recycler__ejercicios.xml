@@ -12,7 +12,6 @@
       <View
           android:layout_width="match_parent"
           android:layout_height="70dp"
-
           android:background="@drawable/rectangulo_celdas"/>
 
     <ImageView
@@ -52,9 +51,6 @@
             android:layout_marginLeft="80dp"
             android:text="Zona que trabaja"
             android:textSize="15sp"/>
-
-
-
 
 
 </FrameLayout>

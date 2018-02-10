@@ -10,13 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/actividades_gobierno">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Actividades"/>
     </LinearLayout>
 
     <com.aurelhubert.ahbottomnavigation.AHBottomNavigation

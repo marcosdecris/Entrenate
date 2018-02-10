@@ -186,12 +186,12 @@
                 android:id="@+id/buttonFinalizar"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Finalizar"
+                android:background="@drawable/rectangulo_gradiente_rutina_empezar"
                 android:shadowColor="#b1b1b1"
+                android:text="Finalizar"
                 android:textColor="#ffffff"
-                android:textStyle="bold"
                 android:textSize="35dp"
-                android:background="@drawable/rectangulo_gradiente_rutina_empezar"/>
+                android:textStyle="bold" />
 
         </FrameLayout>
 
