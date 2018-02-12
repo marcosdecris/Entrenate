@@ -242,10 +242,10 @@ public class DaoEjercicio {
     Ejercicio ejercicio48 = new Ejercicio(48,"Excéntricas", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Dorsal ", "aerobico", "Andador");
 
     //Ascensor
-    Ejercicio ejercicio50 = new Ejercicio(50,"Pecto. extendidos", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
-    Ejercicio ejercicio51 = new Ejercicio(51,"Pecto. inferiroes", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_2, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
-    Ejercicio ejercicio52 = new Ejercicio(52,"Pecto. Superiores", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_3, videoPecho, "x12", "Serrato anterior", "aerobico", "Andador");
-    Ejercicio ejercicio53 = new Ejercicio(53,"Pecto. laterales", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_4, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
+    Ejercicio ejercicio50 = new Ejercicio(50,"Extendidos", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
+    Ejercicio ejercicio51 = new Ejercicio(51,"Inferiroes", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_2, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
+    Ejercicio ejercicio52 = new Ejercicio(52,"Superiores", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_3, videoPecho, "x12", "Serrato anterior", "aerobico", "Andador");
+    Ejercicio ejercicio53 = new Ejercicio(53,"Laterales", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_4, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
     Ejercicio ejercicio54 = new Ejercicio(54,"Triceps", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Biceps", "aerobico", "Andador");
     Ejercicio ejercicio55 = new Ejercicio(55,"Apertura estrictas", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
     Ejercicio ejercicio56 = new Ejercicio(56,"Agarre abierto", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Hombros", "aerobico", "Andador");
