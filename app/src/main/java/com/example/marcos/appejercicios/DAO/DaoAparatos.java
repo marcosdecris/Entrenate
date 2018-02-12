@@ -13,11 +13,15 @@ import java.util.List;
 
 public class DaoAparatos {
     //Lista de ID delos ejercicios
-    List<Integer> lista1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 1, 2));
-    List<Integer> lista2 = new ArrayList<>(Arrays.asList(9, 10, 11, 12, 13, 14, 15, 8, 1, 2));
-    List<Integer> lista3 = new ArrayList<>(Arrays.asList(16, 17, 18, 19, 20, 21, 22, 8, 1, 2));
-    List<Integer> lista4 = new ArrayList<>(Arrays.asList(3, 14, 15, 19, 4, 5, 6, 8, 1, 2));
-    List<Integer> lista5 = new ArrayList<>(Arrays.asList(16, 17,6, 7, 8, 1, 2, 3,  8, 1, 2));
+    List<Integer> listaPlancha = new ArrayList<>(Arrays.asList(30,31, 32, 33, 34, 35, 36, 37, 38));
+    List<Integer> listaBarra = new ArrayList<>(Arrays.asList(40, 41, 42, 43, 44, 45, 46, 47, 48));
+    List<Integer> listaParalelas = new ArrayList<>(Arrays.asList(60, 61, 62, 63, 64, 65, 66, 67, 68));
+    List<Integer> listaAscensor = new ArrayList<>(Arrays.asList(50, 51, 52, 53, 54, 55, 56, 57, 58));
+    List<Integer> listaEliptica = new ArrayList<>(Arrays.asList(80, 81, 82, 83, 84, 85, 86, 87, 88));
+    List<Integer> listaPasadas = new ArrayList<>(Arrays.asList(70, 71, 72, 73, 74, 75, 76, 77, 78));
+    List<Integer> listaRemo= new ArrayList<>(Arrays.asList(100, 101, 102, 103, 104, 105, 106, 107, 108));
+    List<Integer> listaSurf = new ArrayList<>(Arrays.asList(90, 91, 92, 93, 94, 95, 96, 97, 98));
+
 
 
     // TODO -- Borrar cuando se use Json
@@ -32,29 +36,20 @@ public class DaoAparatos {
          listaAparatos.add(aparato6);
          listaAparatos.add(aparato7);
          listaAparatos.add(aparato8);
-         listaAparatos.add(aparato9);
          return listaAparatos;
      }
 
 
 
-    Aparato aparato1 = new Aparato("Plancha", R.drawable.aparato_abdominales,"Abdominales", lista1 );
-    Aparato aparato2 = new Aparato("Barra", R.drawable.aparato_barra,"Brazos", lista2);
-    Aparato aparato3 = new Aparato("Barras Paralelas", R.drawable.aparato_barras_paralelas,"Triceps", lista3);
-    Aparato aparato4 = new Aparato("Ascensor", R.drawable.aparato_ascensor,"Espalda", lista4);
-    Aparato aparato5 = new Aparato("Elíptica",  R.drawable.aparato_eliptica,"Izquiotibiales", lista5);
-    Aparato aparato6 = new Aparato("Pasadas",  R.drawable.aparato_pasadas,"Resistencia", lista5);
-    Aparato aparato7 = new Aparato("Remo",  R.drawable.aparato_remo,"Tronco superior", lista2);
-    Aparato aparato8 = new Aparato("Surf",  R.drawable.aparato_surf,"Laterales", lista3);
-    Aparato aparato9 = new Aparato("Prensa",  R.drawable.aparatos_prensa,"Gemelos", lista4);
+    Aparato aparato1 = new Aparato("Plancha", R.drawable.aparato_abdominales,"Abdominales", listaPlancha );
+    Aparato aparato2 = new Aparato("Barra", R.drawable.aparato_barra,"Brazos", listaBarra);
+    Aparato aparato3 = new Aparato("Barras Paralelas", R.drawable.aparato_barras_paralelas,"Triceps", listaParalelas);
+    Aparato aparato4 = new Aparato("Ascensor", R.drawable.aparato_ascensor,"Espalda", listaAscensor);
+    Aparato aparato5 = new Aparato("Elíptica",  R.drawable.aparato_eliptica,"Izquiotibiales", listaEliptica);
+    Aparato aparato6 = new Aparato("Pasadas",  R.drawable.aparato_pasadas,"Resistencia", listaPasadas);
+    Aparato aparato7 = new Aparato("Remo",  R.drawable.aparato_remo,"Tronco superior", listaRemo);
+    Aparato aparato8 = new Aparato("Surf",  R.drawable.aparato_surf,"Laterales", listaSurf);
 
-
-
-
-
-
-
-
-
+    
 
 }
