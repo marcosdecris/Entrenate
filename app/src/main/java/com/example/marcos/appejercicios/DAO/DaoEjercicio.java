@@ -220,9 +220,9 @@ public class DaoEjercicio {
 
     //Ejercicios para aparatos -------------------------------------------------
     //Plancha
-    Ejercicio ejercicio30 = new Ejercicio(30,"Abdominales inferiores", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
-    Ejercicio ejercicio31 = new Ejercicio(31,"Abdominales superiores", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
-    Ejercicio ejercicio32 = new Ejercicio(32,"Abdominales laterales", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio30 = new Ejercicio(30,"Inferiores", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio31 = new Ejercicio(31,"Superiores", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio32 = new Ejercicio(32,"Laterales", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio33 = new Ejercicio(33,"Oblicuos inferior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio34 = new Ejercicio(34,"Oblicuo superior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio35 = new Ejercicio(35,"Barca", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
@@ -231,21 +231,21 @@ public class DaoEjercicio {
     Ejercicio ejercicio38 = new Ejercicio(38,"Piramidal", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_abdominales, videoAbdominales, "x12", "Abdominales", "aerobico", "Andador");
 
     //Barra
-    Ejercicio ejercicio40 = new Ejercicio(40,"Dominadas estrictas", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Trapecio", "aerobico", "Andador");
+    Ejercicio ejercicio40 = new Ejercicio(40,"Dominadas ", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Trapecio", "aerobico", "Andador");
     Ejercicio ejercicio41 = new Ejercicio(41,"Agarre abierto", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Dorsal ", "aerobico", "Andador");
     Ejercicio ejercicio42 = new Ejercicio(42,"Agarre neutro", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Romboides", "aerobico", "Andador");
     Ejercicio ejercicio43 = new Ejercicio(43,"Kipping", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Trapecio", "aerobico", "Andador");
-    Ejercicio ejercicio44 = new Ejercicio(44,"Dominadas supinas", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Dorsal ", "aerobico", "Andador");
+    Ejercicio ejercicio44 = new Ejercicio(44,"Supinas", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Dorsal ", "aerobico", "Andador");
     Ejercicio ejercicio45 = new Ejercicio(45,"Pies a la barra", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Romboides", "aerobico", "Andador");
-    Ejercicio ejercicio46 = new Ejercicio(46,"Rodillas a los codos", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Escápula", "aerobico", "Andador");
+    Ejercicio ejercicio46 = new Ejercicio(46,"Dominadas", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Escápula", "aerobico", "Andador");
     Ejercicio ejercicio47 = new Ejercicio(47,"Isométricas", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Trapecio", "aerobico", "Andador");
     Ejercicio ejercicio48 = new Ejercicio(48,"Excéntricas", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_barra, videoBarras, "x12", "Dorsal ", "aerobico", "Andador");
 
     //Ascensor
-    Ejercicio ejercicio50 = new Ejercicio(50,"Pectorales extendidos", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
-    Ejercicio ejercicio51 = new Ejercicio(51,"Pectorales inferiroes", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_2, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
-    Ejercicio ejercicio52 = new Ejercicio(52,"Pectorales Superiores", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_3, videoPecho, "x12", "Serrato anterior", "aerobico", "Andador");
-    Ejercicio ejercicio53 = new Ejercicio(53,"Pectorales laterales", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_4, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
+    Ejercicio ejercicio50 = new Ejercicio(50,"Pecto. extendidos", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
+    Ejercicio ejercicio51 = new Ejercicio(51,"Pecto. inferiroes", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_2, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
+    Ejercicio ejercicio52 = new Ejercicio(52,"Pecto. Superiores", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_3, videoPecho, "x12", "Serrato anterior", "aerobico", "Andador");
+    Ejercicio ejercicio53 = new Ejercicio(53,"Pecto. laterales", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_brazos_4, videoPecho, "x12", "Pectoral mayor", "aerobico", "Andador");
     Ejercicio ejercicio54 = new Ejercicio(54,"Triceps", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Biceps", "aerobico", "Andador");
     Ejercicio ejercicio55 = new Ejercicio(55,"Apertura estrictas", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Pectoral menor", "aerobico", "Andador");
     Ejercicio ejercicio56 = new Ejercicio(56,"Agarre abierto", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_brazos_1, videoPecho, "x12", "Hombros", "aerobico", "Andador");
@@ -288,8 +288,8 @@ public class DaoEjercicio {
     //Surf
     Ejercicio ejercicio90 = new Ejercicio(90,"Laterales", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio91 = new Ejercicio(91,"Oblicuos", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
-    Ejercicio ejercicio92 = new Ejercicio(92,"Abdominales superior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
-    Ejercicio ejercicio93 = new Ejercicio(93,"Abdominales inferior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio92 = new Ejercicio(92,"Abdominales sup.", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio93 = new Ejercicio(93,"Abdominales inf.", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio94 = new Ejercicio(94,"Cuádriceps", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio95 = new Ejercicio(95,"Aductores", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio96 = new Ejercicio(96,"Izquiotibiales", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_caderas, videoCaderas, "x12", "Abdominales", "aerobico", "Andador");
@@ -299,8 +299,8 @@ public class DaoEjercicio {
     //Remo
     Ejercicio ejercicio100 = new Ejercicio(100,"Laterales", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_remo, videoRemo, "x12", "Laterales", "aerobico", "Andador");
     Ejercicio ejercicio101 = new Ejercicio(101,"Oblicuos", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_remo_2, videoRemo, "x12", "Oblicuos", "aerobico", "Andador");
-    Ejercicio ejercicio102 = new Ejercicio(102,"Abdominales superior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_remo, videoRemo, "x12", "Abdominales", "aerobico", "Andador");
-    Ejercicio ejercicio103 = new Ejercicio(103,"Abdominales inferior", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_remo_2, videoRemo, "x12", "Izquiotibiales", "aerobico", "Andador");
+    Ejercicio ejercicio102 = new Ejercicio(102,"Abdominales sup.", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_remo, videoRemo, "x12", "Abdominales", "aerobico", "Andador");
+    Ejercicio ejercicio103 = new Ejercicio(103,"Abdominales inf.", R.drawable.dificultad_tres, 15, R.drawable.ejercicio_remo_2, videoRemo, "x12", "Izquiotibiales", "aerobico", "Andador");
     Ejercicio ejercicio104 = new Ejercicio(104,"Cuádriceps", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_remo, videoRemo, "x12", "Laterales", "aerobico", "Andador");
     Ejercicio ejercicio105 = new Ejercicio(105,"Aductores", R.drawable.dificultad_dos, 15, R.drawable.ejercicio_remo_2, videoRemo, "x12", "Abdominales", "aerobico", "Andador");
     Ejercicio ejercicio106 = new Ejercicio(106,"Izquiotibiales", R.drawable.dificultad_uno, 15, R.drawable.ejercicio_remo, videoRemo, "x12", "Izquiotibiales", "aerobico", "Andador");

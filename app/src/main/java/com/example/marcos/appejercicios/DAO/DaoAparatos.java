@@ -50,6 +50,6 @@ public class DaoAparatos {
     Aparato aparato7 = new Aparato("Remo",  R.drawable.aparato_remo,"Tronco superior", listaRemo);
     Aparato aparato8 = new Aparato("Surf",  R.drawable.aparato_surf,"Laterales", listaSurf);
 
-    
+
 
 }
