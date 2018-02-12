@@ -19,11 +19,11 @@ import com.example.marcos.appejercicios.R;
 public class Cronometro extends AppCompatActivity {
 
 
-    private  ImageButton botonStart;
-    private  ImageButton botonPausa;
+    private  Button botonStart;
+    private  Button botonPausa;
     private  Button botonReiniciar;
     private Chronometer cronometroActividad;
-    private Long lastPause;
+    private long lastPause;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,21 +35,19 @@ public class Cronometro extends AppCompatActivity {
         actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.rectangulo_view_pager));
         setContentView(R.layout.activity_cronometro);
 
-        botonStart = (ImageButton) findViewById(R.id.cronometroStart);
-        botonPausa = (ImageButton) findViewById(R.id.cronometroPause);
+        botonStart = (Button) findViewById(R.id.cronometroStart);
+        botonPausa = (Button) findViewById(R.id.cronometroPause);
         botonReiniciar = (Button) findViewById(R.id.cronometroReiniciar);
         cronometroActividad = (Chronometer) findViewById(R.id.cronometroActivity);
 
         botonStart.setEnabled(true);
-        botonStart.setVisibility(View.VISIBLE);
         botonPausa.setEnabled(false);
-        botonPausa.setVisibility(View.INVISIBLE);
 
 
         botonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(lastPause !=0){
+                if(lastPause != 0){
 
                     cronometroActividad.setBase(cronometroActividad.getBase() + SystemClock.elapsedRealtime() - lastPause);
                 } else{
@@ -57,9 +55,8 @@ public class Cronometro extends AppCompatActivity {
                 }
                 cronometroActividad.start();
                 botonStart.setEnabled(false);
-                botonStart.setVisibility(v.INVISIBLE);
                 botonPausa.setEnabled(true);
-                botonPausa.setVisibility(v.VISIBLE);
+
             }
         });
 
@@ -70,9 +67,8 @@ public class Cronometro extends AppCompatActivity {
                 lastPause = SystemClock.elapsedRealtime();
                 cronometroActividad.stop();
                 botonPausa.setEnabled(false);
-                botonPausa.setVisibility(v.INVISIBLE);
                 botonStart.setEnabled(true);
-                botonStart.setVisibility(v.VISIBLE);
+
             }
         });
 
@@ -81,11 +77,10 @@ public class Cronometro extends AppCompatActivity {
             public void onClick(View v) {
                 cronometroActividad.stop();
                 cronometroActividad.setBase(SystemClock.elapsedRealtime());
-                lastPause = Long.valueOf(0);
+                lastPause = 0;
                 botonStart.setEnabled(true);
-                botonStart.setVisibility(v.VISIBLE);
                 botonPausa.setEnabled(false);
-                botonPausa.setVisibility(v.INVISIBLE);
+
 
             }
         });
