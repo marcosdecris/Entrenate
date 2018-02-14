@@ -36,7 +36,6 @@
         android:layout_margin="8dp"
         android:textSize="25sp"
         android:textColor="#ffffff"
-        android:text="Plaza de los inmigrantes"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"/>
 
@@ -45,7 +44,7 @@
             android:id="@+id/textoCoordenadas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eduardo Costa 1294"
+            android:text="Av. Díaz Velez, C1414"
             android:textColor="#ffffff"
             android:layout_below="@id/textViewMapNombre"
             android:layout_margin="8dp"/>
