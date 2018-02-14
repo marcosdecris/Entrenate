@@ -84,7 +84,7 @@ public class FragmentRecyclerRutinas extends Fragment {
            imageViewFotoTipo.setImageResource(R.drawable.aerobico);
         }if(tipoRutina == "Funcional"){
             imageViewFotoTipo.setImageResource(R.drawable.funcional);
-        }if(tipoRutina == "Musculación"){
+        }if(tipoRutina == "Musculacion"){
             imageViewFotoTipo.setImageResource(R.drawable.musculacion);
         }
     }

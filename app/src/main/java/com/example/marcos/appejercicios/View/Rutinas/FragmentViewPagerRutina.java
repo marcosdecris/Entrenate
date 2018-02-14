@@ -53,7 +53,7 @@ public class FragmentViewPagerRutina extends Fragment {
     public void cargarTiposRutina(){
         tipoRutina.add("Aerobico");
         tipoRutina.add("Funcional");
-        tipoRutina.add("Musculación");
+        tipoRutina.add("Musculacion");
     }
 
 }

@@ -44,8 +44,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Todos los aparatos que podes encontrar en las postas aerobicas.
-Como usarlos, y, ejercicios especificos para cada aparato"
+                android:text="Todos los aparatos que podes encontrar en las postas aeróbicas.
+Cómo usarlos, y, ejercicios específicos para cada aparato"
                 android:shadowColor="@color/colorAccent"
 
                 android:textSize="12sp"
@@ -90,7 +90,7 @@ Como usarlos, y, ejercicios especificos para cada aparato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Rutinas para todos los niveles. Divididas por categorias:
-Musculacion / Aerobico / Funcional."
+Musculación / Aeróbico / Funcional."
                 android:textSize="12sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center"
@@ -138,7 +138,7 @@ Musculacion / Aerobico / Funcional."
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Busca el lugas mas cercano para entrenar"
+                android:text="Busca el lugar más cercano para entrenar"
                 android:textSize="8sp"
                 android:textColor="#000000"
                 android:elevation="2dp"
@@ -177,7 +177,7 @@ Musculacion / Aerobico / Funcional."
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trabaja musculos especificos"
+                android:text="Trabaja músculos específicos"
                 android:textSize="10sp"
                 android:textColor="#ffffff"
                 android:layout_gravity="center_vertical"
